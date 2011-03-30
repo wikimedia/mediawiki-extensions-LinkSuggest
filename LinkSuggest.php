@@ -23,13 +23,14 @@ if( !defined( 'MEDIAWIKI' ) ) {
 
 // Extension credits that will show up on Special:Version
 $wgExtensionCredits['other'][] = array(
+	'path' => __FILE__,
 	'name' => 'LinkSuggest',
 	'version' => '1.6',
 	'author' => array(
 		'Inez Korczyński', 'Bartek Łapiński', 'Łukasz Garczewski',
 		'Jesús Martínez Novo', 'Jack Phoenix'
 	),
-	'description' => 'Suggests links to editors on edit view',
+	'descriptionmsg' => 'linksuggest-desc',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:LinkSuggest',
 );
 
