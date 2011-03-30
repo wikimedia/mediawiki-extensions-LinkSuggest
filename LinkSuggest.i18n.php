@@ -10,8 +10,8 @@ $messages = array();
 
 /** English */
 $messages['en'] = array(
-	'linksuggest-desc' => 'Suggests links to editors on edit view'
-	'tog-disablelinksuggest' => 'Do not show link suggest'
+	'linksuggest-desc' => 'Suggests links to editors on edit view',
+	'tog-disablelinksuggest' => 'Do not show link suggest',
 );
 
 /** Afrikaans (Afrikaans)
