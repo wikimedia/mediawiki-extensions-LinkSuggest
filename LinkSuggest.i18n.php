@@ -14,6 +14,13 @@ $messages['en'] = array(
 	'tog-disablelinksuggest' => 'Do not show link suggest',
 );
 
+/** Message documentation (Message documentation)
+ * @author Purodha
+ */
+$messages['qqq'] = array(
+	'linksuggest-desc' => '{{desc}}',
+);
+
 /** Afrikaans (Afrikaans)
  * @author Naudefj
  */
@@ -56,9 +63,12 @@ $messages['cs'] = array(
 	'tog-disablelinksuggest' => 'Nezobrazovat návrhy odkazů',
 );
 
-/** German (Deutsch) */
+/** German (Deutsch)
+ * @author Kghbln
+ */
 $messages['de'] = array(
-	'tog-disablelinksuggest' => 'Keine Link-Vorschläge anzeigen',
+	'linksuggest-desc' => 'Ermöglicht im Bearbeitungsfenster Linkvorschläge für Bearbeiter',
+	'tog-disablelinksuggest' => 'Keine Linkvorschläge anzeigen',
 );
 
 /** Spanish (Español) */
@@ -82,6 +92,7 @@ $messages['fr'] = array(
  * @author Toliño
  */
 $messages['gl'] = array(
+	'linksuggest-desc' => 'Suxire ligazóns aos editores no modo de edición',
 	'tog-disablelinksuggest' => 'Non mostrar as ligazón suxeridas',
 );
 
@@ -103,6 +114,7 @@ $messages['he'] = array(
  * @author Michawiki
  */
 $messages['hsb'] = array(
+	'linksuggest-desc' => 'Namjetuje wobdźěłowarjam wotkazy we wobdźěłowanskim woknje',
 	'tog-disablelinksuggest' => 'Žadyn wotkazowy namjet pokazać',
 );
 
@@ -117,6 +129,7 @@ $messages['hu'] = array(
  * @author McDutchie
  */
 $messages['ia'] = array(
+	'linksuggest-desc' => 'Suggere ligamines a redactores si le vista de modification es active',
 	'tog-disablelinksuggest' => 'Non monstrar suggestiones de ligamines',
 );
 
@@ -143,6 +156,7 @@ $messages['ja'] = array(
  * @author Purodha
  */
 $messages['ksh'] = array(
+	'linksuggest-desc' => 'Schleiht däm Schriewver zohsäzlejje Lenks vör beim Sigge Ändere.',
 	'tog-disablelinksuggest' => 'Donn kein Vörschlääsch för Lenks aanzeije',
 );
 
@@ -150,6 +164,7 @@ $messages['ksh'] = array(
  * @author Robby
  */
 $messages['lb'] = array(
+	'linksuggest-desc' => 'Proposéiert Linke fir Editeuren an der Ännerungs-Vue',
 	'tog-disablelinksuggest' => 'Déi proposéiert Linken net weisen',
 );
 
@@ -164,6 +179,7 @@ $messages['lv'] = array(
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
+	'linksuggest-desc' => 'Предложување врски на уредниците при уредување',
 	'tog-disablelinksuggest' => 'Не прикажувај предложени врски',
 );
 
@@ -220,6 +236,7 @@ $messages['ps'] = array(
  * @author Hamilton Abreu
  */
 $messages['pt'] = array(
+	'linksuggest-desc' => 'Sugere links aos editores no modo de edição',
 	'tog-disablelinksuggest' => 'Não apresentar sugestões de links',
 );
 
@@ -237,8 +254,11 @@ $messages['roa-tara'] = array(
 	'tog-disablelinksuggest' => "No fà vedè 'u collegamende suggerite",
 );
 
-/** Russian (Русский) */
+/** Russian (Русский)
+ * @author Александр Сигачёв
+ */
 $messages['ru'] = array(
+	'linksuggest-desc' => 'Предлагает редакторам ссылки в режиме редактирования',
 	'tog-disablelinksuggest' => 'Не показывать предложения ссылок',
 );
 
@@ -268,6 +288,7 @@ $messages['sv'] = array(
  * @author AnakngAraw
  */
 $messages['tl'] = array(
+	'linksuggest-desc' => 'Magmungkahi ng mga kawing sa mga patnugot habang nasa tanawing pampatnugot',
 	'tog-disablelinksuggest' => 'Huwag ipakita ang mungkahing kawing',
 );
 
