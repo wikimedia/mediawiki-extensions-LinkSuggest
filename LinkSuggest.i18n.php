@@ -104,9 +104,11 @@ $messages['gv'] = array(
 );
 
 /** Hebrew (עברית)
+ * @author Amire80
  * @author Rotemliss
  */
 $messages['he'] = array(
+	'linksuggest-desc' => 'הצעות קישורים לעורכים תוך כדי עריכה',
 	'tog-disablelinksuggest' => 'ביטול הצגת הצעות לקישורים',
 );
 
@@ -187,6 +189,7 @@ $messages['mk'] = array(
  * @author Siebrand
  */
 $messages['nl'] = array(
+	'linksuggest-desc' => 'Verwijzingen voorstellen tijdens het bewerken',
 	'tog-disablelinksuggest' => 'Geen verwijzigssuggesties weergeven',
 );
 
