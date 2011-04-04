@@ -37,8 +37,10 @@ $messages['az'] = array(
 
 /** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
+ * @author Wizardist
  */
 $messages['be-tarask'] = array(
+	'linksuggest-desc' => 'Прапануе рэдактарам спасылкі падчас рэдагаваньня',
 	'tog-disablelinksuggest' => 'Не паказваць прапановы спасылак',
 );
 
@@ -47,6 +49,14 @@ $messages['be-tarask'] = array(
  */
 $messages['br'] = array(
 	'tog-disablelinksuggest' => 'Chomp hep diskouez al liammoù kinniget',
+);
+
+/** Bosnian (Bosanski)
+ * @author CERminator
+ */
+$messages['bs'] = array(
+	'linksuggest-desc' => 'Predlaže linkove uređivačima u načinu uređivanja',
+	'tog-disablelinksuggest' => 'Ne prikazuj prijedlog linka',
 );
 
 /** Catalan (Català)
