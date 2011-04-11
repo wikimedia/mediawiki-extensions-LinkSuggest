@@ -280,7 +280,8 @@ $messages['ru'] = array(
  * @author Verlor
  */
 $messages['sr-ec'] = array(
-	'tog-disablelinksuggest' => 'Не приказуј предложену везу',
+	'linksuggest-desc' => 'Предлаже везе уређивачима у приказу за уређивање',
+	'tog-disablelinksuggest' => 'Не приказуј предлог везе',
 );
 
 /** Sundanese (Basa Sunda)
