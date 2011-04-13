@@ -93,8 +93,11 @@ $messages['fi'] = array(
 	'tog-disablelinksuggest' => 'Älä näytä linkkiehdotuksia',
 );
 
-/** French (Français) */
+/** French (Français)
+ * @author Sherbrooke
+ */
 $messages['fr'] = array(
+	'linksuggest-desc' => "Dans la fenêtre d'édition, suggère des liens aux contributeurs",
 	'tog-disablelinksuggest' => 'Ne pas montrer les liens suggérés',
 );
 
