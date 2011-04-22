@@ -236,8 +236,10 @@ $messages['pl'] = array(
 
 /** Piedmontese (Piemontèis)
  * @author Borichèt
+ * @author Dragonòt
  */
 $messages['pms'] = array(
+	'linksuggest-desc' => "A sugeriss colegament a j'editor ansima a mosté modìfiche",
 	'tog-disablelinksuggest' => "Mostra pa ij sugeriment ëd j'anliure",
 );
 
