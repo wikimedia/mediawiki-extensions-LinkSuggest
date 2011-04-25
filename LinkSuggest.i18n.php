@@ -215,8 +215,10 @@ $messages['nn'] = array(
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Jon Harald Søby
+ * @author Nghtwlkr
  */
 $messages['no'] = array(
+	'linksuggest-desc' => 'Foreslår lenker til bidragsytere på redigeringsvisningen',
 	'tog-disablelinksuggest' => 'Ikke vis lenkeforslag',
 );
 
