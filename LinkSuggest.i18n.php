@@ -150,8 +150,10 @@ $messages['ia'] = array(
 
 /** Indonesian (Bahasa Indonesia)
  * @author Bennylin
+ * @author IvanLanin
  */
 $messages['id'] = array(
+	'linksuggest-desc' => 'Menyarankan pranala kepada editor pada tampilan suntingan',
 	'tog-disablelinksuggest' => 'Jangan menampilkan saran pranala',
 );
 
@@ -271,6 +273,7 @@ $messages['pt-br'] = array(
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
+	'linksuggest-desc' => "Suggerisce le collegaminde a le editure sus 'a viste d'u cangiamende",
 	'tog-disablelinksuggest' => "No fà vedè 'u collegamende suggerite",
 );
 
