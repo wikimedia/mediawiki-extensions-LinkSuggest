@@ -45,9 +45,11 @@ $messages['be-tarask'] = array(
 );
 
 /** Breton (Brezhoneg)
+ * @author Fulup
  * @author Gwenn-Ael
  */
 $messages['br'] = array(
+	'linksuggest-desc' => "Kinnig a ra liammoù d'ar skridaozerien, er prenestr skridaozañ.",
 	'tog-disablelinksuggest' => 'Chomp hep diskouez al liammoù kinniget',
 );
 
