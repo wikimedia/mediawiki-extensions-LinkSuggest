@@ -103,6 +103,14 @@ $messages['fr'] = array(
 	'tog-disablelinksuggest' => 'Ne pas montrer les liens suggérés',
 );
 
+/** Franco-Provençal (Arpetan)
+ * @author ChrisPtDe
+ */
+$messages['frp'] = array(
+	'linksuggest-desc' => 'Dens la fenétra d’èdicion, consèlye des lims ux contributors.',
+	'tog-disablelinksuggest' => 'Pas fâre vêre los lims conselyês',
+);
+
 /** Galician (Galego)
  * @author Toliño
  */
