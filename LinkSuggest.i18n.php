@@ -274,8 +274,10 @@ $messages['pt'] = array(
 
 /** Brazilian Portuguese (Português do Brasil)
  * @author Daemorris
+ * @author Giro720
  */
 $messages['pt-br'] = array(
+	'linksuggest-desc' => 'Sugere links aos editores no modo de edição',
 	'tog-disablelinksuggest' => 'Não mostrar sugestões de ligação',
 );
 
