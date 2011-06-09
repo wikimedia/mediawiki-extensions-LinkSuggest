@@ -210,6 +210,14 @@ $messages['mk'] = array(
 	'tog-disablelinksuggest' => 'Не прикажувај предложени врски',
 );
 
+/** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
+ */
+$messages['ms'] = array(
+	'linksuggest-desc' => 'Mencadangkan pautan kepada editor dalam paparan penyuntingan',
+	'tog-disablelinksuggest' => 'Jangan paparkan cadangan pautan',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
