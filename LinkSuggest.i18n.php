@@ -261,7 +261,7 @@ $messages['pl'] = array(
  * @author Dragonòt
  */
 $messages['pms'] = array(
-	'linksuggest-desc' => "A sugeriss colegament a j'editor ansima a mosté modìfiche",
+	'linksuggest-desc' => "A sugeriss dj'anliure a j'editor ant la fnestra dle modìfiche",
 	'tog-disablelinksuggest' => "Mostra pa ij sugeriment ëd j'anliure",
 );
 
