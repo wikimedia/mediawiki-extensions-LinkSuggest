@@ -174,8 +174,11 @@ $messages['it'] = array(
 	'tog-disablelinksuggest' => 'Non mostrare link suggeriti',
 );
 
-/** Japanese (日本語) */
+/** Japanese (日本語)
+ * @author Schu
+ */
 $messages['ja'] = array(
+	'linksuggest-desc' => '編集ビューで編集者へのリンクを 提案します',
 	'tog-disablelinksuggest' => '編集時のリンク補完を使わない',
 );
 
