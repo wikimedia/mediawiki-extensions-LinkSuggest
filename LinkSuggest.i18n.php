@@ -254,8 +254,10 @@ $messages['oc'] = array(
 
 /** Polish (Polski)
  * @author Sp5uhe
+ * @author Woytecr
  */
 $messages['pl'] = array(
+	'linksuggest-desc' => 'Proponuje linki podczas edycji',
 	'tog-disablelinksuggest' => 'Nie pokazuj sugerowanych linków',
 );
 
