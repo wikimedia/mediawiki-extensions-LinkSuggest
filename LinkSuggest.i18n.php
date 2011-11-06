@@ -28,6 +28,14 @@ $messages['af'] = array(
 	'tog-disablelinksuggest' => 'Moet nie skakel-voorstelle wys nie',
 );
 
+/** Asturian (Asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'linksuggest-desc' => "Suxerir enllaces a los editores na vista d'edición",
+	'tog-disablelinksuggest' => "Nun amosar suxerencies d'enllaces",
+);
+
 /** Azerbaijani (Azərbaycanca)
  * @author PPerviz
  */
