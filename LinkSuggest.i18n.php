@@ -152,9 +152,11 @@ $messages['hsb'] = array(
 );
 
 /** Hungarian (Magyar)
+ * @author Dj
  * @author Glanthor Reviol
  */
 $messages['hu'] = array(
+	'linksuggest-desc' => 'Hivatkozásokat javasol a szerkesztőknek a szerkesztési nézetben',
 	'tog-disablelinksuggest' => 'Ne jelenítse meg a hivatkozás-javaslatot',
 );
 
@@ -318,7 +320,7 @@ $messages['ru'] = array(
 	'tog-disablelinksuggest' => 'Не показывать предложения ссылок',
 );
 
-/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
  * @author Rancher
  * @author Verlor
  */
@@ -356,7 +358,7 @@ $messages['tr'] = array(
 	'tog-disablelinksuggest' => 'Bağlantı önermesini gösterme',
 );
 
-/** Tatar (Cyrillic) (Татарча/Tatarça (Cyrillic))
+/** Tatar (Cyrillic script) (Татарча)
  * @author Ильнар
  */
 $messages['tt-cyrl'] = array(
