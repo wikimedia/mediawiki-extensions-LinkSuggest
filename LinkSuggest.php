@@ -32,7 +32,7 @@ $wgExtensionCredits['other'][] = array(
 		'Jesús Martínez Novo', 'Jack Phoenix'
 	),
 	'descriptionmsg' => 'linksuggest-desc',
-	'url' => 'http://www.mediawiki.org/wiki/Extension:LinkSuggest',
+	'url' => 'https://www.mediawiki.org/wiki/Extension:LinkSuggest',
 );
 
 // Internationalization file
