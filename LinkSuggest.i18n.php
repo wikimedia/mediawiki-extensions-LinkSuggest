@@ -329,6 +329,12 @@ $messages['sr-ec'] = array(
 	'tog-disablelinksuggest' => 'Не приказуј предлог везе',
 );
 
+/** Serbian (Latin script) (‪Srpski (latinica)‬) */
+$messages['sr-el'] = array(
+	'linksuggest-desc' => 'Predlaže veze uređivačima u prikazu za uređivanje',
+	'tog-disablelinksuggest' => 'Ne prikazuj predlog veze',
+);
+
 /** Sundanese (Basa Sunda)
  * @author Kandar
  */
