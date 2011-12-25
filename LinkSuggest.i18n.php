@@ -231,6 +231,15 @@ $messages['ms'] = array(
 	'tog-disablelinksuggest' => 'Jangan paparkan cadangan pautan',
 );
 
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author Jon Harald Søby
+ * @author Nghtwlkr
+ */
+$messages['nb'] = array(
+	'linksuggest-desc' => 'Foreslår lenker til bidragsytere på redigeringsvisningen',
+	'tog-disablelinksuggest' => 'Ikke vis lenkeforslag',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
@@ -244,15 +253,6 @@ $messages['nl'] = array(
  */
 $messages['nn'] = array(
 	'tog-disablelinksuggest' => 'Ikkje vis lenkjeframlegg',
-);
-
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Jon Harald Søby
- * @author Nghtwlkr
- */
-$messages['nb'] = array(
-	'linksuggest-desc' => 'Foreslår lenker til bidragsytere på redigeringsvisningen',
-	'tog-disablelinksuggest' => 'Ikke vis lenkeforslag',
 );
 
 /** Occitan (Occitan)
