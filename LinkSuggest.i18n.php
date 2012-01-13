@@ -91,6 +91,14 @@ $messages['de'] = array(
 	'tog-disablelinksuggest' => 'Keine Linkvorschläge anzeigen',
 );
 
+/** Lower Sorbian (Dolnoserbski)
+ * @author Michawiki
+ */
+$messages['dsb'] = array(
+	'linksuggest-desc' => 'Naraźujo wobźěłowarjam wótkaze we wobźěłowańskem woknje',
+	'tog-disablelinksuggest' => 'Žedne wótkazowe naraźenje pokazaś',
+);
+
 /** Spanish (Español) */
 $messages['es'] = array(
 	'tog-disablelinksuggest' => 'No mostrar sugerencias de vínculos',
