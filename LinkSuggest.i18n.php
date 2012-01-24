@@ -321,11 +321,12 @@ $messages['roa-tara'] = array(
 );
 
 /** Russian (Русский)
+ * @author KPu3uC B Poccuu
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
 	'linksuggest-desc' => 'Предлагает редакторам ссылки в режиме редактирования',
-	'tog-disablelinksuggest' => 'Не показывать предложения ссылок',
+	'tog-disablelinksuggest' => 'Не показывать предложения ссылок.',
 );
 
 /** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
