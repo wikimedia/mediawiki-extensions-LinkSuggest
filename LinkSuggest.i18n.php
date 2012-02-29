@@ -99,8 +99,11 @@ $messages['dsb'] = array(
 	'tog-disablelinksuggest' => 'Žedne wótkazowe naraźenje pokazaś',
 );
 
-/** Spanish (Español) */
+/** Spanish (Español)
+ * @author Armando-Martin
+ */
 $messages['es'] = array(
+	'linksuggest-desc' => 'Sugiere enlaces a los editores en la vista Edición',
 	'tog-disablelinksuggest' => 'No mostrar sugerencias de vínculos',
 );
 
