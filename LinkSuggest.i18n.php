@@ -189,9 +189,11 @@ $messages['id'] = array(
 );
 
 /** Italian (Italiano)
+ * @author Beta16
  * @author Civvì
  */
 $messages['it'] = array(
+	'linksuggest-desc' => "Suggerisce i collegamenti agli editori nell'interfaccia di modifica",
 	'tog-disablelinksuggest' => 'Non mostrare link suggeriti',
 );
 
