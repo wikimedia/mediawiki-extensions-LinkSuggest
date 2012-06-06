@@ -199,10 +199,19 @@ $messages['it'] = array(
 
 /** Japanese (日本語)
  * @author Schu
+ * @author Shirayuki
  */
 $messages['ja'] = array(
-	'linksuggest-desc' => '編集ビューで編集者へのリンクを 提案します',
+	'linksuggest-desc' => '編集ビューで編集者へのリンクを提案する',
 	'tog-disablelinksuggest' => '編集時のリンク補完を使わない',
+);
+
+/** Korean (한국어)
+ * @author 아라
+ */
+$messages['ko'] = array(
+	'linksuggest-desc' => '편집 보기에서 편집자에게 링크를 제안',
+	'tog-disablelinksuggest' => '링크 제안을 보여주지 마세요',
 );
 
 /** Colognian (Ripoarisch)
