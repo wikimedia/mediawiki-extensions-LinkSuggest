@@ -28,7 +28,7 @@ $messages['af'] = array(
 	'tog-disablelinksuggest' => 'Moet nie skakel-voorstelle wys nie',
 );
 
-/** Asturian (Asturianu)
+/** Asturian (asturianu)
  * @author Xuacu
  */
 $messages['ast'] = array(
@@ -36,7 +36,7 @@ $messages['ast'] = array(
 	'tog-disablelinksuggest' => "Nun amosar suxerencies d'enllaces",
 );
 
-/** Azerbaijani (Azərbaycanca)
+/** Azerbaijani (azərbaycanca)
  * @author PPerviz
  */
 $messages['az'] = array(
@@ -52,7 +52,7 @@ $messages['be-tarask'] = array(
 	'tog-disablelinksuggest' => 'Не паказваць прапановы спасылак',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fulup
  * @author Gwenn-Ael
  */
@@ -61,7 +61,7 @@ $messages['br'] = array(
 	'tog-disablelinksuggest' => 'Chomp hep diskouez al liammoù kinniget',
 );
 
-/** Bosnian (Bosanski)
+/** Bosnian (bosanski)
  * @author CERminator
  */
 $messages['bs'] = array(
@@ -69,14 +69,14 @@ $messages['bs'] = array(
 	'tog-disablelinksuggest' => 'Ne prikazuj prijedlog linka',
 );
 
-/** Catalan (Català)
+/** Catalan (català)
  * @author Paucabot
  */
 $messages['ca'] = array(
 	'tog-disablelinksuggest' => "No mostris suggeriments d'enllaços",
 );
 
-/** Czech (Česky)
+/** Czech (česky)
  * @author Mormegil
  */
 $messages['cs'] = array(
@@ -99,7 +99,7 @@ $messages['dsb'] = array(
 	'tog-disablelinksuggest' => 'Žedne wótkazowe naraźenje pokazaś',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Armando-Martin
  */
 $messages['es'] = array(
@@ -107,14 +107,14 @@ $messages['es'] = array(
 	'tog-disablelinksuggest' => 'No mostrar sugerencias de vínculos',
 );
 
-/** Finnish (Suomi)
+/** Finnish (suomi)
  * @author Centerlink
  */
 $messages['fi'] = array(
 	'tog-disablelinksuggest' => 'Älä näytä linkkiehdotuksia',
 );
 
-/** French (Français)
+/** French (français)
  * @author Sherbrooke
  */
 $messages['fr'] = array(
@@ -122,7 +122,7 @@ $messages['fr'] = array(
 	'tog-disablelinksuggest' => 'Ne pas montrer les liens suggérés',
 );
 
-/** Franco-Provençal (Arpetan)
+/** Franco-Provençal (arpetan)
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
@@ -162,7 +162,7 @@ $messages['hsb'] = array(
 	'tog-disablelinksuggest' => 'Žadyn wotkazowy namjet pokazać',
 );
 
-/** Hungarian (Magyar)
+/** Hungarian (magyar)
  * @author Dj
  * @author Glanthor Reviol
  */
@@ -171,7 +171,7 @@ $messages['hu'] = array(
 	'tog-disablelinksuggest' => 'Ne jelenítse meg a hivatkozás-javaslatot',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -188,7 +188,7 @@ $messages['id'] = array(
 	'tog-disablelinksuggest' => 'Jangan menampilkan saran pranala',
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author Beta16
  * @author Civvì
  */
@@ -230,14 +230,14 @@ $messages['lb'] = array(
 	'tog-disablelinksuggest' => 'Déi proposéiert Linken net weisen',
 );
 
-/** Latvian (Latviešu)
+/** Latvian (latviešu)
  * @author Xil
  */
 $messages['lv'] = array(
 	'tog-disablelinksuggest' => 'Neradīt saišu ieteikumus',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
@@ -270,21 +270,21 @@ $messages['nl'] = array(
 	'tog-disablelinksuggest' => 'Geen verwijzigssuggesties weergeven',
 );
 
-/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
  * @author Harald Khan
  */
 $messages['nn'] = array(
 	'tog-disablelinksuggest' => 'Ikkje vis lenkjeframlegg',
 );
 
-/** Occitan (Occitan)
+/** Occitan (occitan)
  * @author Cedric31
  */
 $messages['oc'] = array(
 	'tog-disablelinksuggest' => 'Far pas veire los ligams suggerits',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author Sp5uhe
  * @author Woytecr
  */
@@ -309,7 +309,7 @@ $messages['ps'] = array(
 	'tog-disablelinksuggest' => 'د تړنې وړانديز مه ښکاره کوه',
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author Hamilton Abreu
  */
 $messages['pt'] = array(
@@ -317,7 +317,7 @@ $messages['pt'] = array(
 	'tog-disablelinksuggest' => 'Não apresentar sugestões de links',
 );
 
-/** Brazilian Portuguese (Português do Brasil)
+/** Brazilian Portuguese (português do Brasil)
  * @author Daemorris
  * @author Giro720
  */
@@ -326,7 +326,7 @@ $messages['pt-br'] = array(
 	'tog-disablelinksuggest' => 'Não mostrar sugestões de ligação',
 );
 
-/** Tarandíne (Tarandíne)
+/** tarandíne (tarandíne)
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
@@ -334,7 +334,7 @@ $messages['roa-tara'] = array(
 	'tog-disablelinksuggest' => "No fà vedè 'u collegamende suggerite",
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author AlexSm
  * @author KPu3uC B Poccuu
  * @author Александр Сигачёв
@@ -344,7 +344,7 @@ $messages['ru'] = array(
 	'tog-disablelinksuggest' => 'Не показывать предложения ссылок',
 );
 
-/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
  * @author Rancher
  * @author Verlor
  */
@@ -353,7 +353,7 @@ $messages['sr-ec'] = array(
 	'tog-disablelinksuggest' => 'Не приказуј предлог везе',
 );
 
-/** Serbian (Latin script) (‪Srpski (latinica)‬) */
+/** Serbian (Latin script) (‪srpski (latinica)‬) */
 $messages['sr-el'] = array(
 	'linksuggest-desc' => 'Predlaže veze uređivačima u prikazu za uređivanje',
 	'tog-disablelinksuggest' => 'Ne prikazuj predlog veze',
@@ -366,7 +366,7 @@ $messages['su'] = array(
 	'tog-disablelinksuggest' => 'Sumputkeun usulan tutumbu',
 );
 
-/** Swedish (Svenska)
+/** Swedish (svenska)
  * @author Sertion
  */
 $messages['sv'] = array(
@@ -388,26 +388,26 @@ $messages['tr'] = array(
 	'tog-disablelinksuggest' => 'Bağlantı önermesini gösterme',
 );
 
-/** Tatar (Cyrillic script) (Татарча)
+/** Tatar (Cyrillic script) (татарча)
  * @author Ильнар
  */
 $messages['tt-cyrl'] = array(
 	'tog-disablelinksuggest' => 'Сылтамаларны күрсәтмәскә',
 );
 
-/** Ukrainian (Українська) */
+/** Ukrainian (українська) */
 $messages['uk'] = array(
 	'tog-disablelinksuggest' => 'Не показувати пропозиції посилань',
 );
 
-/** Simplified Chinese (‪中文(简体)‬)
+/** Simplified Chinese (‪中文（简体）‬)
  * @author Hydra
  */
 $messages['zh-hans'] = array(
 	'tog-disablelinksuggest' => '不会显示链接建议',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬)
+/** Traditional Chinese (‪中文（繁體）‬)
  * @author Frankou
  */
 $messages['zh-hant'] = array(
