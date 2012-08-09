@@ -325,6 +325,13 @@ $messages['pt-br'] = array(
 	'tog-disablelinksuggest' => 'Não mostrar sugestões de ligação',
 );
 
+/** Romanian (română)
+ * @author Stelistcristi
+ */
+$messages['ro'] = array(
+	'tog-disablelinksuggest' => 'Nu afișa sugestia pentru legătură',
+);
+
 /** tarandíne (tarandíne)
  * @author Joetaras
  */
