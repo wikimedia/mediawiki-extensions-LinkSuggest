@@ -406,6 +406,14 @@ $messages['uk'] = array(
 	'tog-disablelinksuggest' => 'Не показувати пропозиції посилань',
 );
 
+/** Urdu (اردو)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ur'] = array(
+	'linksuggest-desc' => 'ترمیم کریں کے قول پر ایڈیٹرز کے لنکس سے پتہ چلتا ہے',
+	'tog-disablelinksuggest' => 'لنک ظاہر نہ تجویز',
+);
+
 /** Simplified Chinese (‪中文（简体）‬)
  * @author Hydra
  */
