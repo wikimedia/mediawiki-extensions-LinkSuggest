@@ -326,10 +326,11 @@ $messages['pt-br'] = array(
 );
 
 /** Romanian (română)
+ * @author Minisarm
  * @author Stelistcristi
  */
 $messages['ro'] = array(
-	'tog-disablelinksuggest' => 'Nu afișa sugestia pentru legătură',
+	'tog-disablelinksuggest' => 'Nu afișa legăturile sugerate',
 );
 
 /** tarandíne (tarandíne)
