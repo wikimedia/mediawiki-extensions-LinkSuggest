@@ -43,7 +43,7 @@ $messages['az'] = array(
 	'tog-disablelinksuggest' => 'Keçid təklifini göstərmə',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Wizardist
  */
@@ -253,7 +253,7 @@ $messages['ms'] = array(
 	'tog-disablelinksuggest' => 'Jangan paparkan cadangan pautan',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Nghtwlkr
  */
 $messages['nb'] = array(
@@ -269,7 +269,7 @@ $messages['nl'] = array(
 	'tog-disablelinksuggest' => 'Geen verwijzigssuggesties weergeven',
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
+/** Norwegian Nynorsk (norsk (nynorsk)‎)
  * @author Harald Khan
  */
 $messages['nn'] = array(
@@ -351,7 +351,7 @@ $messages['ru'] = array(
 	'tog-disablelinksuggest' => 'Не показывать предложения ссылок',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Rancher
  * @author Verlor
  */
@@ -360,7 +360,7 @@ $messages['sr-ec'] = array(
 	'tog-disablelinksuggest' => 'Не приказуј предлог везе',
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬) */
+/** Serbian (Latin script) (srpski (latinica)‎) */
 $messages['sr-el'] = array(
 	'linksuggest-desc' => 'Predlaže veze uređivačima u prikazu za uređivanje',
 	'tog-disablelinksuggest' => 'Ne prikazuj predlog veze',
@@ -415,14 +415,14 @@ $messages['ur'] = array(
 	'tog-disablelinksuggest' => 'لنک ظاہر نہ تجویز',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Hydra
  */
 $messages['zh-hans'] = array(
 	'tog-disablelinksuggest' => '不会显示链接建议',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Frankou
  */
 $messages['zh-hant'] = array(
