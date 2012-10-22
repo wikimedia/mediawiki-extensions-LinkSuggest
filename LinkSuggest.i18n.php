@@ -360,7 +360,8 @@ $messages['sr-ec'] = array(
 	'tog-disablelinksuggest' => 'Не приказуј предлог везе',
 );
 
-/** Serbian (Latin script) (srpski (latinica)‎) */
+/** Serbian (Latin script) (srpski (latinica)‎)
+ */
 $messages['sr-el'] = array(
 	'linksuggest-desc' => 'Predlaže veze uređivačima u prikazu za uređivanje',
 	'tog-disablelinksuggest' => 'Ne prikazuj predlog veze',
@@ -402,7 +403,8 @@ $messages['tt-cyrl'] = array(
 	'tog-disablelinksuggest' => 'Сылтамаларны күрсәтмәскә',
 );
 
-/** Ukrainian (українська) */
+/** Ukrainian (українська)
+ */
 $messages['uk'] = array(
 	'tog-disablelinksuggest' => 'Не показувати пропозиції посилань',
 );
@@ -428,4 +430,3 @@ $messages['zh-hans'] = array(
 $messages['zh-hant'] = array(
 	'tog-disablelinksuggest' => '不顯示鏈接建議',
 );
-
