@@ -202,8 +202,8 @@ $messages['it'] = array(
  * @author Shirayuki
  */
 $messages['ja'] = array(
-	'linksuggest-desc' => '編集ビューで編集者へのリンクを提案する',
-	'tog-disablelinksuggest' => '編集時のリンク補完を使わない',
+	'linksuggest-desc' => '編集ビューでリンクを編集者に提案する',
+	'tog-disablelinksuggest' => '編集時にリンク補完を表示しない',
 );
 
 /** Korean (한국어)
