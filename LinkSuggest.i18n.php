@@ -419,8 +419,10 @@ $messages['ur'] = array(
 
 /** Simplified Chinese (中文（简体）‎)
  * @author Hydra
+ * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
+	'linksuggest-desc' => '在编辑视图上给编者建议链接',
 	'tog-disablelinksuggest' => '不会显示链接建议',
 );
 
