@@ -241,7 +241,7 @@ $messages['lv'] = array(
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
-	'linksuggest-desc' => 'Предложување врски на уредниците при уредување',
+	'linksuggest-desc' => 'Предлагање врски на уредниците при уредување',
 	'tog-disablelinksuggest' => 'Не прикажувај предложени врски',
 );
 
