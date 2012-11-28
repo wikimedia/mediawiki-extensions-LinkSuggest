@@ -109,8 +109,10 @@ $messages['es'] = array(
 
 /** Finnish (suomi)
  * @author Centerlink
+ * @author Nedergard
  */
 $messages['fi'] = array(
+	'linksuggest-desc' => 'Ehdottaa linkkejä muokkaajille muokkausikkunassa',
 	'tog-disablelinksuggest' => 'Älä näytä linkkiehdotuksia',
 );
 
