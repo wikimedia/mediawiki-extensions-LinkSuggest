@@ -255,6 +255,14 @@ $messages['ms'] = array(
 	'tog-disablelinksuggest' => 'Jangan paparkan cadangan pautan',
 );
 
+/** Maltese (Malti)
+ * @author Chrisportelli
+ */
+$messages['mt'] = array(
+	'linksuggest-desc' => 'Tissuġġerixxi ħoloq lill-edituri fl-interfaċċa tal-modifika',
+	'tog-disablelinksuggest' => 'Turix ħoloq suġġeriti',
+);
+
 /** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Nghtwlkr
  */
