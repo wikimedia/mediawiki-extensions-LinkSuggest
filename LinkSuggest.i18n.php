@@ -275,7 +275,7 @@ $messages['nb'] = array(
  * @author Siebrand
  */
 $messages['nl'] = array(
-	'linksuggest-desc' => 'Verwijzingen voorstellen tijdens het bewerken',
+	'linksuggest-desc' => 'Koppelingen voorstellen tijdens het bewerken',
 	'tog-disablelinksuggest' => 'Geen verwijzigssuggesties weergeven',
 );
 
