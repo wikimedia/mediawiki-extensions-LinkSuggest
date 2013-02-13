@@ -208,6 +208,13 @@ $messages['ja'] = array(
 	'tog-disablelinksuggest' => '編集時にリンク補完を表示しない',
 );
 
+/** Georgian (ქართული)
+ * @author David1010
+ */
+$messages['ka'] = array(
+	'tog-disablelinksuggest' => 'არ აჩვენო ბმულების შეთავაზებები',
+);
+
 /** Korean (한국어)
  * @author 아라
  */
