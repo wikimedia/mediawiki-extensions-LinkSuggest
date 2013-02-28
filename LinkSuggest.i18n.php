@@ -16,9 +16,10 @@ $messages['en'] = array(
 
 /** Message documentation (Message documentation)
  * @author Purodha
+ * @author Shirayuki
  */
 $messages['qqq'] = array(
-	'linksuggest-desc' => '{{desc}}',
+	'linksuggest-desc' => '{{desc|name=Link Suggest|url=http://www.mediawiki.org/wiki/Extension:LinkSuggest}}',
 );
 
 /** Afrikaans (Afrikaans)
