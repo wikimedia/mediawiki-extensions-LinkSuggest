@@ -20,6 +20,7 @@ $messages['en'] = array(
  */
 $messages['qqq'] = array(
 	'linksuggest-desc' => '{{desc|name=Link Suggest|url=http://www.mediawiki.org/wiki/Extension:LinkSuggest}}',
+	'tog-disablelinksuggest' => 'Used as checkbox label in [[Special:Preferences]].',
 );
 
 /** Afrikaans (Afrikaans)
