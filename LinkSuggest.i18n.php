@@ -272,7 +272,7 @@ $messages['mt'] = array(
 	'tog-disablelinksuggest' => 'Turix ħoloq suġġeriti',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎)
+/** Norwegian Bokmål (norsk bokmål)
  * @author Nghtwlkr
  */
 $messages['nb'] = array(
@@ -288,7 +288,7 @@ $messages['nl'] = array(
 	'tog-disablelinksuggest' => 'Geen verwijzigssuggesties weergeven',
 );
 
-/** Norwegian Nynorsk (norsk (nynorsk)‎)
+/** Norwegian Nynorsk (norsk nynorsk)
  * @author Harald Khan
  */
 $messages['nn'] = array(
