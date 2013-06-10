@@ -458,7 +458,9 @@ $messages['zh-hans'] = array(
 
 /** Traditional Chinese (中文（繁體）‎)
  * @author Frankou
+ * @author Justincheng12345
  */
 $messages['zh-hant'] = array(
+	'linksuggest-desc' => '於編輯視圖上為編者建議連結',
 	'tog-disablelinksuggest' => '不顯示鏈接建議',
 );
