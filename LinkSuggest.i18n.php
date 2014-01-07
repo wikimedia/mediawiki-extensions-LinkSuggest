@@ -109,6 +109,14 @@ $messages['es'] = array(
 	'tog-disablelinksuggest' => 'No mostrar sugerencias de vínculos',
 );
 
+/** Persian (فارسی)
+ * @author Armin1392
+ */
+$messages['fa'] = array(
+	'linksuggest-desc' => 'لینک‌های پیشنهاد شده به ویراستاران برای نمایش ویرایش',
+	'tog-disablelinksuggest' => 'پیشنهاد لینک را نشان ندهید',
+);
+
 /** Finnish (suomi)
  * @author Centerlink
  * @author Nedergard
