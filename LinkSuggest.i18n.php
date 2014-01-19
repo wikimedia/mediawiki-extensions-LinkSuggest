@@ -441,9 +441,10 @@ $messages['tt-cyrl'] = array(
 
 /** Ukrainian (українська)
  * @author Base
+ * @author Ua2004
  */
 $messages['uk'] = array(
-	'linksuggest-desc' => 'Пропонує редакторам посилання в режимі редагування',
+	'linksuggest-desc' => 'Підказки з посиланнями на вже існуючі сторінки у режимі редагування',
 	'tog-disablelinksuggest' => 'Не показувати пропозиції посилань',
 );
 
