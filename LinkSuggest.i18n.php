@@ -111,10 +111,11 @@ $messages['es'] = array(
 
 /** Persian (فارسی)
  * @author Armin1392
+ * @author Ebraminio
  */
 $messages['fa'] = array(
 	'linksuggest-desc' => 'لینک‌های پیشنهاد شده به ویراستاران برای نمایش ویرایش',
-	'tog-disablelinksuggest' => 'پیشنهاد لینک را نشان ندهید',
+	'tog-disablelinksuggest' => 'پیشنهاد پیوند را نشان ندهید',
 );
 
 /** Finnish (suomi)
