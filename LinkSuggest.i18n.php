@@ -114,7 +114,7 @@ $messages['es'] = array(
  * @author Ebraminio
  */
 $messages['fa'] = array(
-	'linksuggest-desc' => 'لینک‌های پیشنهاد شده به ویراستاران برای نمایش ویرایش',
+	'linksuggest-desc' => 'پیوندهای پیشنهادشده به ویراستاران برای نمایش ویرایش',
 	'tog-disablelinksuggest' => 'پیشنهاد پیوند را نشان ندهید',
 );
 
