@@ -1,0 +1,10 @@
+{
+    "@metadata": {
+        "authors": [
+            "Centerlink",
+            "Nedergard"
+        ]
+    },
+    "linksuggest-desc": "Ehdottaa linkkejä muokkaajille muokkausikkunassa",
+    "tog-disablelinksuggest": "Älä näytä linkkiehdotuksia"
+}

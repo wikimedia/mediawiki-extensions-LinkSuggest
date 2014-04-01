@@ -1,0 +1,11 @@
+{
+    "@metadata": {
+        "authors": [
+            "AlexSm",
+            "KPu3uC B Poccuu",
+            "Александр Сигачёв"
+        ]
+    },
+    "linksuggest-desc": "Предлагает редакторам ссылки в режиме редактирования",
+    "tog-disablelinksuggest": "Не показывать предложения ссылок"
+}

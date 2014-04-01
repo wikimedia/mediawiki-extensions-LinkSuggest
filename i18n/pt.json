@@ -1,0 +1,9 @@
+{
+    "@metadata": {
+        "authors": [
+            "Hamilton Abreu"
+        ]
+    },
+    "linksuggest-desc": "Sugere links aos editores no modo de edição",
+    "tog-disablelinksuggest": "Não apresentar sugestões de links"
+}

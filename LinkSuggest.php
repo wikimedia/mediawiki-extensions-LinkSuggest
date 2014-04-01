@@ -6,7 +6,6 @@
  *
  * @file
  * @ingroup Extensions
- * @version 1.7 (r32133)
  * @author Inez Korczyński <korczynski at gmail dot com>
  * @author Bartek Łapiński <bartek at wikia-inc dot com>
  * @author Łukasz Garczewski (TOR) <tor at wikia-inc dot com>
@@ -26,7 +25,7 @@ if( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'name' => 'LinkSuggest',
-	'version' => '1.7',
+	'version' => '1.8.0',
 	'author' => array(
 		'Inez Korczyński', 'Bartek Łapiński', 'Łukasz Garczewski', 'Maciej Brencz',
 		'Jesús Martínez Novo', 'Jack Phoenix'
@@ -36,6 +35,7 @@ $wgExtensionCredits['other'][] = array(
 );
 
 // Internationalization file
+$wgMessagesDirs['LinkSuggest'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['LinkSuggest'] = dirname( __FILE__ ) . '/LinkSuggest.i18n.php';
 
 // ResourceLoader support (MW 1.17+)

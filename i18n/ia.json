@@ -1,0 +1,9 @@
+{
+    "@metadata": {
+        "authors": [
+            "McDutchie"
+        ]
+    },
+    "linksuggest-desc": "Suggere ligamines a redactores si le vista de modification es active",
+    "tog-disablelinksuggest": "Non monstrar suggestiones de ligamines"
+}

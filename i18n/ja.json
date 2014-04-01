@@ -1,0 +1,10 @@
+{
+    "@metadata": {
+        "authors": [
+            "Schu",
+            "Shirayuki"
+        ]
+    },
+    "linksuggest-desc": "編集ビューでリンクを編集者に提案する",
+    "tog-disablelinksuggest": "編集時にリンク補完を表示しない"
+}

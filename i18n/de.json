@@ -1,0 +1,9 @@
+{
+    "@metadata": {
+        "authors": [
+            "Kghbln"
+        ]
+    },
+    "linksuggest-desc": "Ermöglicht im Bearbeitungsfenster Linkvorschläge für Bearbeiter",
+    "tog-disablelinksuggest": "Keine Linkvorschläge anzeigen"
+}
