@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Mormegil"
-        ]
-    },
-    "tog-disablelinksuggest": "Nezobrazovat návrhy odkazů"
+	"@metadata": {
+		"authors": [
+			"Mormegil"
+		]
+	},
+	"tog-disablelinksuggest": "Nezobrazovat návrhy odkazů"
 }

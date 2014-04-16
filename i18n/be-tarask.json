@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "EugeneZelenko",
-            "Wizardist"
-        ]
-    },
-    "linksuggest-desc": "Прапануе рэдактарам спасылкі падчас рэдагаваньня",
-    "tog-disablelinksuggest": "Не паказваць прапановы спасылак"
+	"@metadata": {
+		"authors": [
+			"EugeneZelenko",
+			"Wizardist"
+		]
+	},
+	"linksuggest-desc": "Прапануе рэдактарам спасылкі падчас рэдагаваньня",
+	"tog-disablelinksuggest": "Не паказваць прапановы спасылак"
 }

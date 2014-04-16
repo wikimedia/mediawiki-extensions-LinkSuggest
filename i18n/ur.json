@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "පසිඳු කාවින්ද"
-        ]
-    },
-    "linksuggest-desc": "ترمیم کریں کے قول پر ایڈیٹرز کے لنکس سے پتہ چلتا ہے",
-    "tog-disablelinksuggest": "لنک ظاہر نہ تجویز"
+	"@metadata": {
+		"authors": [
+			"පසිඳු කාවින්ද"
+		]
+	},
+	"linksuggest-desc": "ترمیم کریں کے قول پر ایڈیٹرز کے لنکس سے پتہ چلتا ہے",
+	"tog-disablelinksuggest": "لنک ظاہر نہ تجویز"
 }

@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Bjankuloski06"
-        ]
-    },
-    "linksuggest-desc": "Предлагање врски на уредниците при уредување",
-    "tog-disablelinksuggest": "Не прикажувај предложени врски"
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"linksuggest-desc": "Предлагање врски на уредниците при уредување",
+	"tog-disablelinksuggest": "Не прикажувај предложени врски"
 }

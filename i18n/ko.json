@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "아라"
-        ]
-    },
-    "linksuggest-desc": "편집 보기에서 편집자에게 링크를 제안",
-    "tog-disablelinksuggest": "링크 제안을 보여주지 마세요"
+	"@metadata": {
+		"authors": [
+			"아라"
+		]
+	},
+	"linksuggest-desc": "편집 보기에서 편집자에게 링크를 제안",
+	"tog-disablelinksuggest": "링크 제안을 보여주지 마세요"
 }

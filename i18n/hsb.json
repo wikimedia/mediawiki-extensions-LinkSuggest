@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Michawiki"
-        ]
-    },
-    "linksuggest-desc": "Namjetuje wobdźěłowarjam wotkazy we wobdźěłowanskim woknje",
-    "tog-disablelinksuggest": "Žadyn wotkazowy namjet pokazać"
+	"@metadata": {
+		"authors": [
+			"Michawiki"
+		]
+	},
+	"linksuggest-desc": "Namjetuje wobdźěłowarjam wotkazy we wobdźěłowanskim woknje",
+	"tog-disablelinksuggest": "Žadyn wotkazowy namjet pokazać"
 }

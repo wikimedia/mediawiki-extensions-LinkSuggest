@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Robby"
-        ]
-    },
-    "linksuggest-desc": "Proposéiert Linke fir Editeuren an der Ännerungs-Vue",
-    "tog-disablelinksuggest": "Déi proposéiert Linken net weisen"
+	"@metadata": {
+		"authors": [
+			"Robby"
+		]
+	},
+	"linksuggest-desc": "Proposéiert Linke fir Editeuren an der Ännerungs-Vue",
+	"tog-disablelinksuggest": "Déi proposéiert Linken net weisen"
 }

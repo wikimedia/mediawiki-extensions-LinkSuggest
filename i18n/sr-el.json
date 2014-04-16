@@ -1,7 +1,5 @@
 {
-    "@metadata": {
-        "authors": []
-    },
-    "linksuggest-desc": "Predlaže veze uređivačima u prikazu za uređivanje",
-    "tog-disablelinksuggest": "Ne prikazuj predlog veze"
+	"@metadata": [],
+	"linksuggest-desc": "Predlaže veze uređivačima u prikazu za uređivanje",
+	"tog-disablelinksuggest": "Ne prikazuj predlog veze"
 }

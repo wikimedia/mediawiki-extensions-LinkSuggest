@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "CERminator"
-        ]
-    },
-    "linksuggest-desc": "Predlaže linkove uređivačima u načinu uređivanja",
-    "tog-disablelinksuggest": "Ne prikazuj prijedlog linka"
+	"@metadata": {
+		"authors": [
+			"CERminator"
+		]
+	},
+	"linksuggest-desc": "Predlaže linkove uređivačima u načinu uređivanja",
+	"tog-disablelinksuggest": "Ne prikazuj prijedlog linka"
 }

@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Fulup",
-            "Gwenn-Ael"
-        ]
-    },
-    "linksuggest-desc": "Kinnig a ra liammoù d'ar skridaozerien, er prenestr skridaozañ.",
-    "tog-disablelinksuggest": "Chomp hep diskouez al liammoù kinniget"
+	"@metadata": {
+		"authors": [
+			"Fulup",
+			"Gwenn-Ael"
+		]
+	},
+	"linksuggest-desc": "Kinnig a ra liammoù d'ar skridaozerien, er prenestr skridaozañ.",
+	"tog-disablelinksuggest": "Chomp hep diskouez al liammoù kinniget"
 }

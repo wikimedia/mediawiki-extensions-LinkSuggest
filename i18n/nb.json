@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Nghtwlkr"
-        ]
-    },
-    "linksuggest-desc": "Foreslår lenker til bidragsytere på redigeringsvisningen",
-    "tog-disablelinksuggest": "Ikke vis lenkeforslag"
+	"@metadata": {
+		"authors": [
+			"Nghtwlkr"
+		]
+	},
+	"linksuggest-desc": "Foreslår lenker til bidragsytere på redigeringsvisningen",
+	"tog-disablelinksuggest": "Ikke vis lenkeforslag"
 }

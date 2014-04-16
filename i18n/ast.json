@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Xuacu"
-        ]
-    },
-    "linksuggest-desc": "Suxerir enllaces a los editores na vista d'edición",
-    "tog-disablelinksuggest": "Nun amosar suxerencies d'enllaces"
+	"@metadata": {
+		"authors": [
+			"Xuacu"
+		]
+	},
+	"linksuggest-desc": "Suxerir enllaces a los editores na vista d'edición",
+	"tog-disablelinksuggest": "Nun amosar suxerencies d'enllaces"
 }

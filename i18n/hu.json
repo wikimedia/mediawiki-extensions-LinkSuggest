@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Dj",
-            "Glanthor Reviol"
-        ]
-    },
-    "linksuggest-desc": "Hivatkozásokat javasol a szerkesztőknek a szerkesztési nézetben",
-    "tog-disablelinksuggest": "Ne jelenítse meg a hivatkozás-javaslatot"
+	"@metadata": {
+		"authors": [
+			"Dj",
+			"Glanthor Reviol"
+		]
+	},
+	"linksuggest-desc": "Hivatkozásokat javasol a szerkesztőknek a szerkesztési nézetben",
+	"tog-disablelinksuggest": "Ne jelenítse meg a hivatkozás-javaslatot"
 }

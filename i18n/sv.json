@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Sertion",
-            "WikiPhoenix"
-        ]
-    },
-    "linksuggest-desc": "Föreslår länkar till redigerarna i redigeringsvyn",
-    "tog-disablelinksuggest": "Visa inte länkförslag"
+	"@metadata": {
+		"authors": [
+			"Sertion",
+			"WikiPhoenix"
+		]
+	},
+	"linksuggest-desc": "Föreslår länkar till redigerarna i redigeringsvyn",
+	"tog-disablelinksuggest": "Visa inte länkförslag"
 }

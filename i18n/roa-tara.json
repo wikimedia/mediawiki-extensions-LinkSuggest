@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Joetaras"
-        ]
-    },
-    "linksuggest-desc": "Suggerisce le collegaminde a le editure sus 'a viste d'u cangiamende",
-    "tog-disablelinksuggest": "No fà vedè 'u collegamende suggerite"
+	"@metadata": {
+		"authors": [
+			"Joetaras"
+		]
+	},
+	"linksuggest-desc": "Suggerisce le collegaminde a le editure sus 'a viste d'u cangiamende",
+	"tog-disablelinksuggest": "No fà vedè 'u collegamende suggerite"
 }
