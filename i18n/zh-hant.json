@@ -2,9 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"Frankou",
-			"Justincheng12345"
+			"Justincheng12345",
+			"LNDDYL"
 		]
 	},
 	"linksuggest-desc": "於編輯視圖上為編者建議連結",
-	"tog-disablelinksuggest": "不顯示鏈接建議"
+	"tog-disablelinksuggest": "不顯示連結建議"
 }
