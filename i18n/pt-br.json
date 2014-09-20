@@ -2,9 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"Daemorris",
-			"Giro720"
+			"Giro720",
+			"Dianakc"
 		]
 	},
 	"linksuggest-desc": "Sugere links aos editores no modo de edição",
-	"tog-disablelinksuggest": "Não mostrar sugestões de ligação"
+	"tog-disablelinksuggest": "Não mostrar sugestão de link"
 }
