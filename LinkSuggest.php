@@ -170,7 +170,7 @@ function getLinkSuggest() {
 	$results = array();
 
 	$dbr = wfGetDB( DB_SLAVE );
-	$query = $dbr->strencode( mb_strtolower( $query ) );
+	$query = mb_strtolower( $query );
 
 	$res = $dbr->select(
 		array( 'querycache', 'page' ),
@@ -180,7 +180,7 @@ function getLinkSuggest() {
 			'qc_namespace = page_namespace',
 			'page_is_redirect = 0',
 			'qc_type' => 'Mostlinked',
-			"LOWER(qc_title) LIKE '{$query}%'",
+			'LOWER(qc_title)' . $dbr->buildLike( $query, $dbr->anyString() ),
 			'qc_namespace' => $namespaces
 		),
 		__METHOD__,
@@ -195,7 +195,7 @@ function getLinkSuggest() {
 		'page',
 		array( 'page_namespace', 'page_title' ),
 		array(
-			"LOWER(page_title) LIKE '{$query}%'",
+			'LOWER(page_title)' . $dbr->buildLike( $query, $dbr->anyString() ),
 			'page_is_redirect' => 0,
 			'page_namespace' => $namespaces
 		),
