@@ -1,0 +1,48 @@
+{
+	"name": "LinkSuggest",
+	"version": "1.8.1",
+	"author": [
+		"Inez Korczyński",
+		"Bartek Łapiński",
+		"Łukasz Garczewski",
+		"Maciej Brencz",
+		"Jesús Martínez Novo",
+		"Jack Phoenix"
+	],
+	"license-name": "GPL-2.0+",
+	"url": "https://www.mediawiki.org/wiki/Extension:LinkSuggest",
+	"descriptionmsg": "linksuggest-desc",
+	"type": "other",
+	"MessagesDirs": {
+		"LinkSuggest": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"LinkSuggest": "LinkSuggest.class.php"
+	},
+	"Hooks": {
+		"EditPage::showEditForm:initial": [
+			"LinkSuggest::onEditPage"
+		],
+		"GetPreferences": [
+			"LinkSuggest::onGetPreferences"
+		]
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "LinkSuggest"
+	},
+	"ResourceModules": {
+		"ext.LinkSuggest": {
+			"scripts": "jquery.mw.linksuggest.js",
+			"dependencies": [ "jquery.ui.autocomplete" ],
+			"position": "bottom"
+		}
+	},
+	"AjaxExportList": [
+		"LinkSuggest::get",
+		"LinkSuggest::getImage"
+	],
+	"manifest_version": 1
+}

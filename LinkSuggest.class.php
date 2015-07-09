@@ -1,6 +1,21 @@
 <?php
 /**
+ * LinkSuggest
+ * This extension provides the user with article title suggestions as he types
+ * a link in wikitext.
+ *
  * @file
+ * @ingroup Extensions
+ * @author Inez Korczyński <korczynski at gmail dot com>
+ * @author Bartek Łapiński <bartek at wikia-inc dot com>
+ * @author Łukasz Garczewski (TOR) <tor at wikia-inc dot com>
+ * @author Maciej Brencz <macbre@wikia-inc.com>
+ * @author Jesús Martínez Novo <martineznovo at gmail dot com>
+ * @author Jack Phoenix <jack@countervandalism.net>
+ * @copyright Copyright © 2008-2009, Wikia Inc.
+ * @copyright Copyright © 2011 Jesús Martínez Novo
+ * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
+ * @link https://www.mediawiki.org/wiki/Extension:LinkSuggest Documentation
  */
 
 class LinkSuggest {
