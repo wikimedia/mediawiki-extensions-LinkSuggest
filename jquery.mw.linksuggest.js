@@ -1,8 +1,8 @@
 /*
- * jQuery MediaWiki LinkSuggest 1.3.1
+ * jQuery MediaWiki LinkSuggest 1.3.2
  * JavaScript for LinkSuggest extension
  *
- * Copyright © 2010-2014
+ * Copyright © 2010-2015
  * Authors: Inez Korczyński (korczynski at gmail dot com)
  *          Jesús Martínez Novo (martineznovo at gmail dot com)
  * Licensed under the GPL (GPL-LICENSE.txt) license.
@@ -17,7 +17,7 @@ var testerElement = null, // Tester element, global for caching and not recreate
 	cachedElement = null, // Cached element of the autocomplete to compare
 	cachedText = null, // Cached text before the position of the link
 	cachedPosition = null, // Cached position of the drop-down
-	suppressKeyPress;
+	suppressKeyPress, suppressInput, suppressKeyPressRepeat;
 
 $.widget( 'mw.linksuggest', {
 	options: {
@@ -26,7 +26,7 @@ $.widget( 'mw.linksuggest', {
 		url: mw.config.get( 'wgScript' )
 	},
 	_create: function() {
-		var self = this;
+		var self = this, ac;
 		var opt = {
 			source: function() {
 				self._sendQuery.apply( self, arguments );
@@ -48,79 +48,89 @@ $.widget( 'mw.linksuggest', {
 		// capturing arrows and enter
 		this.options = $.extend( opt, this.options );
 		this.element.autocomplete( this.options );
+		ac = this.element.data( 'autocomplete' );
 		// Overwrite the keydown event of autocomplete to fix some undesired key events
-		this.element.unbind( 'keydown.autocomplete' ).unbind( 'kepress.autocomplete' )
-			.bind( 'keydown.linksuggest',
-				function( thisInstance ) {
-					return function() {
-						thisInstance._keydown.apply( thisInstance, arguments );
-					};
-				}( this ))
-			.bind( 'keypress.linksuggest', function() {
-					if ( suppressKeyPress ) {
-						suppressKeyPress = false;
-						event.preventDefault();
-					}
-				});
+		ac._off( this.element, 'keydown kepress' );
+		this._on( this.element, {
+			keydown: function( thisInstance ) {
+				return function() {
+					thisInstance._keydown.apply( thisInstance, arguments );
+				};
+			}( this ),
+			keypress: function( event ) {
+				if ( suppressKeyPress ) {
+					suppressKeyPress = false;
+					event.preventDefault();
+				}
+				if ( suppressKeyPressRepeat ) {
+					return;
+				}
+			}
+		});
 		// deactivate some menu weird behavior
-		this.element.data( 'autocomplete' ).menu.options.blur = null;
+		ac.menu.options.blur = null;
 	},
-	// function copied from jQuery UI Autocomplete 1.8.17. Keep in sync with the same used in MediaWiki
+	// function copied from jQuery UI Autocomplete 1.9.2. Keep in sync with the same used in MediaWiki
 	_legacyKeydown: function( event ) {
-		var self = this;
-		if ( self.options.disabled || self.element.prop( 'readOnly' ) ) {
+		var keyCode;
+		if ( this.element.prop( 'readOnly' ) ) {
+			suppressKeyPress = true;
+			suppressInput = true;
+			suppressKeyPressRepeat = true;
 			return;
 		}
 
 		suppressKeyPress = false;
-		var keyCode = $.ui.keyCode;
-		switch ( event.keyCode ) {
+		suppressInput = false;
+		suppressKeyPressRepeat = false;
+		keyCode = $.ui.keyCode;
+		switch( event.keyCode ) {
 			case keyCode.PAGE_UP:
-				self._move( 'previousPage', event );
+				suppressKeyPress = true;
+				this._move( 'previousPage', event );
 				break;
 			case keyCode.PAGE_DOWN:
-				self._move( 'nextPage', event );
+				suppressKeyPress = true;
+				this._move( 'nextPage', event );
 				break;
 			case keyCode.UP:
-				self._move( 'previous', event );
-				// prevent moving cursor to beginning of text field in some browsers
-				event.preventDefault();
+				suppressKeyPress = true;
+				this._keyEvent( 'previous', event );
 				break;
 			case keyCode.DOWN:
-				self._move( 'next', event );
-				// prevent moving cursor to end of text field in some browsers
-				event.preventDefault();
+				suppressKeyPress = true;
+				this._keyEvent( 'next', event );
 				break;
 			case keyCode.ENTER:
 			case keyCode.NUMPAD_ENTER:
 				// when menu is open and has focus
-				if ( self.menu.active ) {
+				if ( this.menu.active ) {
 					// #6055 - Opera still allows the keypress to occur
 					// which causes forms to submit
 					suppressKeyPress = true;
 					event.preventDefault();
+					this.menu.select( event );
 				}
-				// passthrough - ENTER and TAB both select the current element
+				break;
 			case keyCode.TAB:
-				if ( !self.menu.active ) {
-					return;
+				if ( this.menu.active ) {
+					this.menu.select( event );
 				}
-				self.menu.select( event );
 				break;
 			case keyCode.ESCAPE:
-				self.element.val( self.term );
-				self.close( event );
+				if ( this.menu.element.is( ':visible' ) ) {
+					this._value( this.term );
+					this.close( event );
+					// Different browsers have different default behavior for escape
+					// Single press can mean undo or clear
+					// Double press in IE means clear the whole form
+					event.preventDefault();
+				}
 				break;
 			default:
-				// keypress is triggered before the input value is changed
-				clearTimeout( self.searching );
-				self.searching = setTimeout( function() {
-					// only search if the value has changed
-					if ( self.term != self.element.val() ) {
-						self.selectedItem = null;
-						self.search( null, event );
-					}
-				}, self.options.delay );
+				suppressKeyPressRepeat = true;
+				// search timeout should be triggered before the input value is changed
+				this._searchTimeout( event );
 				break;
 		}
 	},
@@ -144,7 +154,6 @@ $.widget( 'mw.linksuggest', {
 				// return without setting any value
 				this.element.data( 'autocomplete' ).close( event );
 				return;
-				break;
 			case keyCode.PAGE_UP:
 			case keyCode.PAGE_DOWN:
 			case keyCode.LEFT:
@@ -159,25 +168,25 @@ $.widget( 'mw.linksuggest', {
 			case keyCode.END:
 			case keyCode.HOME:
 				// ignore metakeys (shift, ctrl, alt)
-				return
-				break;
+				return;
 		}
 		// If we've not returned already from this function, fire the old autocomplete handler
 		this._legacyKeydown.apply( this.element.data( 'autocomplete' ), arguments );
 	},
 	_sendQuery: function( request, response ) {
-		var emptyset = [];
-		var text = this._getText();
-		var caret = this._getCaret();
-		var sQueryStartAt = -1;
-		var sQueryReal = '';
-		var format = '';
-		var stripPrefix = false;
+		var emptyset = [],
+		  text = this._getText(),
+		  caret = this._getCaret(),
+		  sQueryStartAt = -1,
+		  sQueryReal = '',
+		  format = '',
+		  stripPrefix = false,
+		  i, c, c1;
 
 		// Look forward, to see if we closed this one
-		for ( var i = caret; i < text.length; i++ ) {
-			var c = text.charAt( i );
-			var c1 = ( i > 0 ? text.charAt( i - 1 ) : '' );
+		for ( i = caret; i < text.length; i++ ) {
+			c = text.charAt( i );
+			c1 = ( i > 0 ? text.charAt( i - 1 ) : '' );
 			// A line break, it isn't closed
 			if ( c == '\n' ) {
 				break;
@@ -203,8 +212,8 @@ $.widget( 'mw.linksuggest', {
 		}
 
 		// Get the start of the link/template
-		for ( var i = caret - 1; i >= 0; i-- ) {
-			var c = text.charAt( i );
+		for ( i = caret - 1; i >= 0; i-- ) {
+			c = text.charAt( i );
 			// If nothing found after a line break, nothing to match
 			if ( c == '\n' ) {
 				break;
@@ -273,11 +282,11 @@ $.widget( 'mw.linksuggest', {
 			return true;
 		}
 		response( emptyset );
-		return false
+		return false;
 	},
 	_responseWrapper: function( thisArg, callback, format, stripPrefix ) {
 		return function( data ) {
-			if ( data.length == 0 ) {
+			if ( data.length === 0 ) {
 				return callback( [] );
 			}
 			callback( thisArg._formatResponse( data, format, stripPrefix ) );
@@ -324,7 +333,7 @@ $.widget( 'mw.linksuggest', {
 			var sel = document.selection.createRange();
 			var sel2 = sel.duplicate();
 			sel2.moveToElementText( control );
-			var caretPos = -1;
+			caretPos = -1;
 			while ( sel2.inRange( sel ) ) {
 				sel2.moveStart( 'character' );
 				caretPos++;
@@ -357,26 +366,28 @@ $.widget( 'mw.linksuggest', {
 		}
 	},
 	_getCaretPosition: function() {
-		var result = [0, 0];
-		var control = this.element[0];
-		var left = 0;
-		var top = 0;
-		var text = this._getText();
-		var caret = this._getCaret();
-		var initialCaret = caret;
-		if ( caret == 0 ) {
+		var result = [0, 0],
+		  control = this.element[0],
+		  left = 0,
+		  top = 0,
+		  text = this._getText(),
+		  caret = this._getCaret(),
+		  initialCaret = caret,
+		  i, c, textBeforePosition, props, caretElem, pos;
+
+		if ( caret === 0 ) {
 			// This should never happen
 			return result;
 		}
 		// Get the position at the start of the link/template
-		for ( var i = caret - 1; i >= 0; i-- ) {
-			var c = text.charAt(i);
+		for ( i = caret - 1; i >= 0; i-- ) {
+			c = text.charAt(i);
 			if ( c == '[' || c == '{' ) {
 				initialCaret = i + 1;
 				break;
 			}
 		}
-		var textBeforePosition = text.substr( 0, initialCaret );
+		textBeforePosition = text.substr( 0, initialCaret );
 		// If the control isnot the same, clear the cached tester element
 		if ( cachedElement !== control ) {
 			cachedElement = control;
@@ -387,13 +398,13 @@ $.widget( 'mw.linksuggest', {
 		}
 		// Use the cached tester element. Improves speed
 		if ( testerElement === null ) {
-			testerElement = $( '<div style="position:absolute;top:-2000px;left:-2000px;white-space:pre-wrap;visibility:hidden;"></div>' );
+			testerElement = $( '<div style="position:absolute;top:-2000px;left:-2000px;white-space:pre-wrap;visibility:hidden;">' );
 			// Create a tester container to get the size of the text before the caret, and thus the position inside the element
 			// WARNING: You MUST apply a font-family CSS attribute to the textarea (to this particular one, or a generic
 			//	`textarea {font-famly: whatever;}´) so IE could retrieve the correct font-family used, otherwise it may
 			//  fail to position the drop-down correctly!
-			var props = 'padding-top padding-right padding-bottom padding-left border-top-style border-right-style border-bottom-style border-left-style border-top-width border-right-width border-bottom-width border-left-width font-size font-family font-weight line-height'.split( ' ' );
-			for ( var i = 0; i < props.length; i++ ) {
+			props = 'padding-top padding-right padding-bottom padding-left border-top-style border-right-style border-bottom-style border-left-style border-top-width border-right-width border-bottom-width border-left-width font-size font-family font-weight line-height'.split( ' ' );
+			for ( i = 0; i < props.length; i++ ) {
 				testerElement.css( props[i], this.element.css( props[i] ) );
 			}
 		} else {
@@ -403,7 +414,7 @@ $.widget( 'mw.linksuggest', {
 			}
 		}
 		// An element that will provide the caret position
-		var caretElem = $( '<span></span>' ).text( text.substring( initialCaret, caret ) );
+		caretElem = $( '<span>' ).text( text.substring( initialCaret, caret ) );
  		// Using scrollWidth because if the textarea has scroll, the effective
 		// width for word wrap doesn't include the width used by the scrollbar
 		testerElement
@@ -411,7 +422,7 @@ $.widget( 'mw.linksuggest', {
 			.text( textBeforePosition )
 			.append( caretElem )
 			.appendTo( document.body );
-		var pos = caretElem.position();
+		pos = caretElem.position();
 		result = [ pos.left, pos.top + caretElem.height() - control.scrollTop ];
 		// Store in the cache
 		cachedText = textBeforePosition;
