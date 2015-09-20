@@ -1,7 +1,7 @@
 {
-    "@metadata": {
-        "authors": []
-    },
-    "linksuggest-desc": "Suggests links to editors on edit view",
-    "tog-disablelinksuggest": "Do not show link suggest"
+	"@metadata": {
+		"authors": []
+	},
+	"linksuggest-desc": "Suggests links to editors on edit view",
+	"tog-disablelinksuggest": "Do not show link suggest"
 }
