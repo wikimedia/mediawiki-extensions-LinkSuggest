@@ -1,6 +1,6 @@
 {
 	"name": "LinkSuggest",
-	"version": "1.8.1",
+	"version": "1.9",
 	"author": [
 		"Inez Korczyński",
 		"Bartek Łapiński",
@@ -19,7 +19,11 @@
 		]
 	},
 	"AutoloadClasses": {
+		"ApiLinkSuggest": "ApiLinkSuggest.php",
 		"LinkSuggest": "LinkSuggest.class.php"
+	},
+	"APIModules": {
+		"linksuggest": "ApiLinkSuggest"
 	},
 	"Hooks": {
 		"EditPage::showEditForm:initial": [
@@ -36,13 +40,9 @@
 	"ResourceModules": {
 		"ext.LinkSuggest": {
 			"scripts": "jquery.mw.linksuggest.js",
-			"dependencies": [ "jquery.ui.autocomplete" ],
+			"dependencies": [ "jquery.ui.autocomplete", "mediawiki.api" ],
 			"position": "bottom"
 		}
 	},
-	"AjaxExportList": [
-		"LinkSuggest::get",
-		"LinkSuggest::getImage"
-	],
 	"manifest_version": 1
 }

@@ -6,6 +6,8 @@
 			"Umherirrender"
 		]
 	},
+	"apihelp-linksuggest-example-1": "{{doc-apihelp-example|linksuggest}}",
+	"apihelp-linksuggest-example-2": "{{doc-apihelp-example|linksuggest}}",
 	"linksuggest-desc": "{{desc|name=Link Suggest|url=https://www.mediawiki.org/wiki/Extension:LinkSuggest}}",
 	"tog-disablelinksuggest": "Used as checkbox label in [[Special:Preferences]]."
 }

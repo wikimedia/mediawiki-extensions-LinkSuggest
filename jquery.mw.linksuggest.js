@@ -1,5 +1,5 @@
 /*
- * jQuery MediaWiki LinkSuggest 1.3.2
+ * jQuery MediaWiki LinkSuggest 1.9
  * JavaScript for LinkSuggest extension
  *
  * Copyright © 2010-2015
@@ -9,8 +9,10 @@
  *
  * Depends:
  *	jquery.ui.autocomplete.js
+ *	mediawiki.api
  */
 ( function( $ ) {
+'use strict';
 
 // Private static variables
 var testerElement = null, // Tester element, global for caching and not recreate it everytime
@@ -22,8 +24,7 @@ var testerElement = null, // Tester element, global for caching and not recreate
 $.widget( 'mw.linksuggest', {
 	options: {
 		minLength: 3,
-		delay: 300,
-		url: mw.config.get( 'wgScript' )
+		delay: 300
 	},
 	_create: function() {
 		var self = this, ac;
@@ -175,13 +176,13 @@ $.widget( 'mw.linksuggest', {
 	},
 	_sendQuery: function( request, response ) {
 		var emptyset = [],
-		  text = this._getText(),
-		  caret = this._getCaret(),
-		  sQueryStartAt = -1,
-		  sQueryReal = '',
-		  format = '',
-		  stripPrefix = false,
-		  i, c, c1;
+			text = this._getText(),
+			caret = this._getCaret(),
+			sQueryStartAt = -1,
+			sQueryReal = '',
+			format = '',
+			stripPrefix = false,
+			i, c, c1, api;
 
 		// Look forward, to see if we closed this one
 		for ( i = caret; i < text.length; i++ ) {
@@ -270,15 +271,12 @@ $.widget( 'mw.linksuggest', {
 		}
 
 		if ( sQueryStartAt >= 0 && sQueryReal.length > this.options.minLength ) {
-			$.get(
-				this.options.url,
-				{
-					action: 'ajax',
-					rs: 'LinkSuggest::get',
-					query: sQueryReal
-				},
-				this._responseWrapper( this, response, format, stripPrefix )
-			);
+			api = new mw.Api();
+			api.get( {
+				action: 'linksuggest',
+				get: 'suggestions',
+				query: sQueryReal
+			} ).done( this._responseWrapper( this, response, format, stripPrefix ) );
 			return true;
 		}
 		response( emptyset );
@@ -286,14 +284,14 @@ $.widget( 'mw.linksuggest', {
 	},
 	_responseWrapper: function( thisArg, callback, format, stripPrefix ) {
 		return function( data ) {
-			if ( data.length === 0 ) {
+			if ( !data || data.error ) {
 				return callback( [] );
 			}
 			callback( thisArg._formatResponse( data, format, stripPrefix ) );
 		};
 	},
 	_formatResponse: function( data, format, stripPrefix ) {
-		return $.map( data.split( '\n' ), function( n ) {
+		return $.map( data.linksuggest.result.suggestions, function( n ) {
 			if ( stripPrefix ) {
 				var pos = n.indexOf( ':' );
 				if ( pos != -1 ) {
@@ -367,13 +365,11 @@ $.widget( 'mw.linksuggest', {
 	},
 	_getCaretPosition: function() {
 		var result = [0, 0],
-		  control = this.element[0],
-		  left = 0,
-		  top = 0,
-		  text = this._getText(),
-		  caret = this._getCaret(),
-		  initialCaret = caret,
-		  i, c, textBeforePosition, props, caretElem, pos;
+			control = this.element[0],
+			text = this._getText(),
+			caret = this._getCaret(),
+			initialCaret = caret,
+			i, c, textBeforePosition, props, caretElem, pos;
 
 		if ( caret === 0 ) {
 			// This should never happen

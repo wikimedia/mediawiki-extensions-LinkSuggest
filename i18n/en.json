@@ -2,6 +2,8 @@
 	"@metadata": {
 		"authors": []
 	},
+	"apihelp-linksuggest-example-1": "Search for pages in the main namespce beginning with \"Ashley\".",
+	"apihelp-linksuggest-example-2": "Create a thumbnail of [[:File:Whatever.jpg]].",
 	"linksuggest-desc": "Suggests links to editors on edit view",
 	"tog-disablelinksuggest": "Do not show link suggest"
 }

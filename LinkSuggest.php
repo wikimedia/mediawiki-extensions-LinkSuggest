@@ -22,7 +22,7 @@
 $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'name' => 'LinkSuggest',
-	'version' => '1.8.1',
+	'version' => '1.9',
 	'author' => array(
 		'Inez Korczyński', 'Bartek Łapiński', 'Łukasz Garczewski', 'Maciej Brencz',
 		'Jesús Martínez Novo', 'Jack Phoenix'
@@ -37,7 +37,7 @@ $wgMessagesDirs['LinkSuggest'] = __DIR__ . '/i18n';
 // ResourceLoader support (MW 1.17+)
 $wgResourceModules['ext.LinkSuggest'] = array(
 	'scripts' => 'jquery.mw.linksuggest.js',
-	'dependencies' => array( 'jquery.ui.autocomplete' ),
+	'dependencies' => array( 'jquery.ui.autocomplete', 'mediawiki.api' ),
 	'localBasePath' => __DIR__,
 	'remoteExtPath' => 'LinkSuggest'
 );
@@ -49,6 +49,6 @@ $wgAutoloadClasses['LinkSuggest'] = __DIR__ . '/LinkSuggest.class.php';
 $wgHooks['EditPage::showEditForm:initial'][] = 'LinkSuggest::onEditPage';
 $wgHooks['GetPreferences'][] = 'LinkSuggest::onGetPreferences';
 
-// AJAX callback functions
-$wgAjaxExportList[] = 'LinkSuggest::get';
-$wgAjaxExportList[] = 'LinkSuggest::getImage';
+// Load the API module
+$wgAutoloadClasses['ApiLinkSuggest'] = __DIR__ . '/ApiLinkSuggest.php';
+$wgAPIModules['linksuggest'] = 'ApiLinkSuggest';

@@ -57,13 +57,9 @@ class LinkSuggest {
 	/**
 	 * Creates a thumbnail from an image name.
 	 *
-	 * @return AjaxResponse containing the thumbnail image
+	 * @return string The thumbnail image on success, 'N/A' on failure
 	 */
-	public static function getImage() {
-		global $wgRequest;
-
-		$imageName = $wgRequest->getText( 'imageName' );
-
+	public static function getImage( $imageName ) {
 		$out = 'N/A';
 		try {
 			$img = wfFindFile( $imageName );
@@ -74,23 +70,21 @@ class LinkSuggest {
 			$out = 'N/A';
 		}
 
-		$ar = new AjaxResponse( $out );
-		$ar->setCacheDuration( 60 * 60 );
-
-		return $ar;
+		return $out;
 	}
 
 	/**
-	 * AJAX callback function
+	 * API callback function
 	 *
+	 * @param string|mixed $originalQuery User-typed search query (beginning of a page title, hopefully)
 	 * @return array $ar Link suggestions
 	 */
-	public static function get() {
-		global $wgRequest, $wgContLang, $wgContentNamespaces;
+	public static function get( $originalQuery ) {
+		global $wgContLang, $wgContentNamespaces;
 
 		// trim passed query and replace spaces by underscores
 		// - this is how MediaWiki stores article titles in database
-		$query = urldecode( trim( $wgRequest->getText( 'query' ) ) );
+		$query = urldecode( trim( $originalQuery ) );
 		$query = str_replace( ' ', '_', $query );
 
 		// explode passed query by ':' to get namespace and article title
@@ -170,28 +164,13 @@ class LinkSuggest {
 		}
 
 		$results = array_unique( $results );
-		$format = $wgRequest->getText( 'format' );
 
-		if ( $format == 'json' ) {
-			$out = json_encode( array(
-				'query' => $wgRequest->getText( 'query' ),
-				'suggestions' => array_values( $results )
-			) );
-		} else {
-			$out = implode( "\n", $results );
-		}
+		$out = array(
+			'query' => $originalQuery,
+			'suggestions' => array_values( $results )
+		);
 
-		$ar = new AjaxResponse( $out );
-		$ar->setCacheDuration( 60 * 60 ); // cache results for one hour
-
-		// set proper content type to ease development
-		if ( $format == 'json' ) {
-			$ar->setContentType( 'application/json; charset=utf-8' );
-		} else {
-			$ar->setContentType( 'text/plain; charset=utf-8' );
-		}
-
-		return $ar;
+		return $out;
 	}
 
 	/**
