@@ -6,6 +6,7 @@
 			"Sujiniku"
 		]
 	},
+	"apihelp-linksuggest-example-1": "「Ashley」で始まる主な名前空間の内部のページを検索します。",
 	"apihelp-linksuggest-example-2": "[[:File:Whatever.jpg]]のサムネイルを作成する。",
 	"linksuggest-desc": "編集ビューでリンクを編集者に提案する",
 	"tog-disablelinksuggest": "編集時にリンク補完を表示しない"
