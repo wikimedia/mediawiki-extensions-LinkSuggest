@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"V.narsikar"
+		]
+	},
+	"apihelp-linksuggest-example-1": "\"अॲशले\" पासून सुरू होणारी पाने मुख्य नामविश्वात शोधा.",
+	"apihelp-linksuggest-example-2": "[[:File:Whatever.jpg]]या संचिकेचे नखूले(thumbnail) तयार करा."
+}

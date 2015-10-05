@@ -5,6 +5,8 @@
 			"Civvì"
 		]
 	},
+	"apihelp-linksuggest-example-1": "Cerca le pagine nel namespace principale che iniziano con \"Ashley\".",
+	"apihelp-linksuggest-example-2": "Crea una miniatura di [[:File:Whatever.jpg]].",
 	"linksuggest-desc": "Suggerisce i collegamenti agli editori nell'interfaccia di modifica",
 	"tog-disablelinksuggest": "Non mostrare link suggeriti"
 }
