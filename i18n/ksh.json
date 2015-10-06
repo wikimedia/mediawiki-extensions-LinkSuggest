@@ -4,6 +4,8 @@
 			"Purodha"
 		]
 	},
+	"apihelp-linksuggest-example-1": "Söhk noh Sigge em Houp-Appachtemang, di med „<code lang=\"en\" xml:lang=\"en\" dir=\"ltr\">Ashley</code>“ aanfange.",
+	"apihelp-linksuggest-example-2": "Lähsch e Minnibelldsche aan vun „<code lang=\"en\" xml:lang=\"en\" dir=\"ltr\"> [[:File:Whatever.jpg]]</code>.",
 	"linksuggest-desc": "Schleiht däm Schriewver zohsäzlejje Lenks vör beim Sigge Ändere.",
 	"tog-disablelinksuggest": "Donn kein Vörschlääsch för Lenks aanzeije"
 }
