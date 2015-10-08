@@ -6,7 +6,7 @@
 		]
 	},
 	"apihelp-linksuggest-example-1": "Buscar páxinas no espazo de nomes principal que empecen con \"Ashley\".",
-	"apihelp-linksuggest-example-2": "Crear unha miniatura de [[:File:Whatever.jpg]].",
+	"apihelp-linksuggest-example-2": "Crear unha miniatura de <kbd>[[:File:Whatever.jpg]]</kbd>.",
 	"linksuggest-desc": "Suxire ligazóns aos editores no modo de edición",
 	"tog-disablelinksuggest": "Non mostrar as ligazón suxeridas"
 }

@@ -5,7 +5,7 @@
 		]
 	},
 	"apihelp-linksuggest-example-1": "No Säiten am Haaptnummraum sichen ugefaang bei \"Ashley\".",
-	"apihelp-linksuggest-example-2": "Eng Miniatur uleeë vu [[:File:Whatever.jpg]].",
+	"apihelp-linksuggest-example-2": "Eng Miniatur uleeë vu <kbd>[[:File:Whatever.jpg]]</kbd>.",
 	"linksuggest-desc": "Proposéiert Linke fir Editeuren an der Ännerungs-Vue",
 	"tog-disablelinksuggest": "Déi proposéiert Linken net weisen"
 }

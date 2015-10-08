@@ -6,7 +6,7 @@
 		]
 	},
 	"apihelp-linksuggest-example-1": "Rechercher les pages dans l’espace principal dont le nom commence par « Ashley ».",
-	"apihelp-linksuggest-example-2": "Créer une vignette de [[:File:Whatever.jpg]].",
+	"apihelp-linksuggest-example-2": "Créer une vignette de <kbd>[[:File:Whatever.jpg]]</kbd>.",
 	"linksuggest-desc": "Dans la fenêtre d'édition, suggère des liens aux contributeurs",
 	"tog-disablelinksuggest": "Ne pas montrer les liens suggérés"
 }

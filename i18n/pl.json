@@ -7,7 +7,7 @@
 		]
 	},
 	"apihelp-linksuggest-example-1": "Wyszukaj strony w przestrzeni głównej rozpoczynające się od „Ashley”.",
-	"apihelp-linksuggest-example-2": "Utwórz miniaturkę [[:File:Whatever.jpg]].",
+	"apihelp-linksuggest-example-2": "Utwórz miniaturkę <kbd>[[:File:Whatever.jpg]]</kbd>.",
 	"linksuggest-desc": "Proponuje linki podczas edycji",
 	"tog-disablelinksuggest": "Nie pokazuj sugerowanych linków"
 }
