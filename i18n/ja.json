@@ -4,10 +4,11 @@
 			"Schu",
 			"Shirayuki",
 			"Sujiniku",
-			"2nd-player"
+			"2nd-player",
+			"Macofe"
 		]
 	},
-	"apihelp-linksuggest-example-1": "「Ashley」で始まる標準名前空間のページを検索します。",
+	"apihelp-linksuggest-example-1": "<kbd>Ashley</kbd>で始まる標準名前空間のページを検索します。",
 	"apihelp-linksuggest-example-2": "<kbd>[[:File:Whatever.jpg]]</kbd>のサムネイルを作成する。",
 	"linksuggest-desc": "編集ビューでリンクを編集者に提案する",
 	"tog-disablelinksuggest": "編集時にリンク補完を表示しない"

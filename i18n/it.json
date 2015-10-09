@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Beta16",
-			"Civvì"
+			"Civvì",
+			"Macofe"
 		]
 	},
-	"apihelp-linksuggest-example-1": "Cerca le pagine nel namespace principale che iniziano con \"Ashley\".",
+	"apihelp-linksuggest-example-1": "Cerca le pagine nel namespace principale che iniziano con <kbd>Ashley</kbd>.",
 	"apihelp-linksuggest-example-2": "Crea una miniatura di <kbd>[[:File:Whatever.jpg]]</kbd>.",
 	"linksuggest-desc": "Suggerisce i collegamenti agli editori nell'interfaccia di modifica",
 	"tog-disablelinksuggest": "Non mostrare link suggeriti"

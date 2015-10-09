@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bjankuloski06"
+			"Bjankuloski06",
+			"Macofe"
 		]
 	},
-	"apihelp-linksuggest-example-1": "Пребарај страници во главниот именски простор што почнуваат со „Ashley“.",
+	"apihelp-linksuggest-example-1": "Пребарај страници во главниот именски простор што почнуваат со <kbd>Ashley</kbd>.",
 	"apihelp-linksuggest-example-2": "Направи минијатура на <kbd>[[:File:Whatever.jpg]]</kbd>.",
 	"linksuggest-desc": "Предлагање врски на уредниците при уредување",
 	"tog-disablelinksuggest": "Не прикажувај предложени врски"

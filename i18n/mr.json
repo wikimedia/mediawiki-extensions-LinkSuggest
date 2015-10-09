@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"V.narsikar"
+			"V.narsikar",
+			"Macofe"
 		]
 	},
-	"apihelp-linksuggest-example-1": "\"अॲशले\" पासून सुरू होणारी पाने मुख्य नामविश्वात शोधा.",
+	"apihelp-linksuggest-example-1": "<kbd>Ashley</kbd> पासून सुरू होणारी पाने मुख्य नामविश्वात शोधा.",
 	"apihelp-linksuggest-example-2": "<kbd>[[:File:Whatever.jpg]]</kbd>या संचिकेचे नखूले(thumbnail) तयार करा."
 }
