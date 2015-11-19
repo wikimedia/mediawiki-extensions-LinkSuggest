@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kghbln"
+			"Kghbln",
+			"Metalhead64"
 		]
 	},
+	"apihelp-linksuggest-example-2": "Erstellt ein Vorschaubild von <kbd>[[:File:Whatever.jpg]]</kbd>.",
 	"linksuggest-desc": "Ermöglicht im Bearbeitungsfenster Linkvorschläge für Bearbeiter",
 	"tog-disablelinksuggest": "Keine Linkvorschläge anzeigen"
 }
