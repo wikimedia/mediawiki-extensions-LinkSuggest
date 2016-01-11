@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"EugeneZelenko",
-			"Wizardist"
+			"Wizardist",
+			"Red Winged Duck"
 		]
 	},
+	"apihelp-linksuggest-example-1": "Пошук старонак у асноўнай прасторы назваў, якія пачынаюцца з <kbd>Ashley</kbd>.",
 	"linksuggest-desc": "Прапануе рэдактарам спасылкі падчас рэдагаваньня",
 	"tog-disablelinksuggest": "Не паказваць прапановы спасылак"
 }
