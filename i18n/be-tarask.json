@@ -7,6 +7,7 @@
 		]
 	},
 	"apihelp-linksuggest-example-1": "Пошук старонак у асноўнай прасторы назваў, якія пачынаюцца з <kbd>Ashley</kbd>.",
+	"apihelp-linksuggest-example-2": "Стварыць мініятуру <kbd>[[:File:Whatever.jpg]]</kbd>.",
 	"linksuggest-desc": "Прапануе рэдактарам спасылкі падчас рэдагаваньня",
 	"tog-disablelinksuggest": "Не паказваць прапановы спасылак"
 }
