@@ -133,7 +133,7 @@ class LinkSuggest {
 				'qc_namespace = page_namespace',
 				'page_is_redirect' => 0,
 				'qc_type' => 'Mostlinked',
-				'LOWER(qc_title)' . $dbr->buildLike( $query, $dbr->anyString() ),
+				'LOWER(CONVERT(qc_title using utf8))' . $dbr->buildLike( $query, $dbr->anyString() ),
 				'qc_namespace' => $namespaces
 			),
 			__METHOD__,
@@ -148,7 +148,7 @@ class LinkSuggest {
 			'page',
 			array( 'page_namespace', 'page_title' ),
 			array(
-				'LOWER(page_title)' . $dbr->buildLike( $query, $dbr->anyString() ),
+				'LOWER(CONVERT(page_title using utf8))' . $dbr->buildLike( $query, $dbr->anyString() ),
 				'page_is_redirect' => 0,
 				'page_namespace' => $namespaces
 			),
