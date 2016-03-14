@@ -3,9 +3,12 @@
 		"authors": [
 			"AlexSm",
 			"KPu3uC B Poccuu",
-			"Александр Сигачёв"
+			"Александр Сигачёв",
+			"Okras"
 		]
 	},
+	"apihelp-linksuggest-example-1": "Искать в основном пространстве имён страницы, начинающиеся на <kbd>Ashley</kbd>.",
+	"apihelp-linksuggest-example-2": "Создать эскиз <kbd>[[:File:Whatever.jpg]]</kbd>.",
 	"linksuggest-desc": "Предлагает редакторам ссылки в режиме редактирования",
 	"tog-disablelinksuggest": "Не показывать предложения ссылок"
 }
