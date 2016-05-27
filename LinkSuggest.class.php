@@ -80,7 +80,7 @@ class LinkSuggest {
 	 * @return array $ar Link suggestions
 	 */
 	public static function get( $originalQuery ) {
-		global $wgContLang, $wgContentNamespaces;
+		global $wgContLang;
 
 		// trim passed query and replace spaces by underscores
 		// - this is how MediaWiki stores article titles in database
@@ -114,7 +114,7 @@ class LinkSuggest {
 		// list of namespaces to search in
 		if ( empty( $namespace ) ) {
 			// search only within content namespaces - default behaviour
-			$namespaces = $wgContentNamespaces;
+			$namespaces = MWNamespace::getContentNamespaces();
 		} else {
 			// search only within a namespace from query
 			$namespaces = $namespace;
