@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Giromin Cangiaxo"
+		]
+	},
+	"apihelp-linksuggest-example-1": "Çerca e paggine into namespace prinçipâ che començan con <kbd>Ashley</kbd>.",
+	"apihelp-linksuggest-example-2": "Crea 'na miniatua de <kbd>[[:File:Whatever.jpg]]</kbd>.",
+	"linksuggest-desc": "O suggerisce i inganci a-i editoî inte l'interfaccia de modiffica",
+	"tog-disablelinksuggest": "No mostrâ inganci suggerii"
+}
