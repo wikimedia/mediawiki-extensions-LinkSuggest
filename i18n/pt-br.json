@@ -3,9 +3,12 @@
 		"authors": [
 			"Daemorris",
 			"Giro720",
-			"Dianakc"
+			"Dianakc",
+			"!Silent"
 		]
 	},
+	"apihelp-linksuggest-example-1": "Procurar páginas no domínio principal iniciadas com <kbd>Ashley</kbd>.",
+	"apihelp-linksuggest-example-2": "Criar uma miniatura de <kbd>[[:File:Whatever.jpg]]</kbd>.",
 	"linksuggest-desc": "Sugere links aos editores no modo de edição",
 	"tog-disablelinksuggest": "Não mostrar sugestão de link"
 }
