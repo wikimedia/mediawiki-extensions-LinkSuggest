@@ -10,6 +10,7 @@
 	"apihelp-linksuggest-example-2": "Стварыць мініятуру <kbd>[[:File:Whatever.jpg]]</kbd>.",
 	"apihelp-linksuggest-description": "Прапаноўваць спасылку рэдактарам падчас рэдагаваньня",
 	"apihelp-linksuggest-param-get": "Паказаць",
+	"apihelp-linksuggest-param-query": "Паказваць прапановы спасылак",
 	"linksuggest-desc": "Прапануе рэдактарам спасылкі падчас рэдагаваньня",
 	"tog-disablelinksuggest": "Не паказваць прапановы спасылак"
 }
