@@ -7,6 +7,8 @@
 	},
 	"apihelp-linksuggest-example-1": "Buscar páxines nel espaciu de nomes principal qu'empiecen por <kbd>Ashley</kbd>.",
 	"apihelp-linksuggest-example-2": "Crear una miniatura de <kbd>[[:File:Whatever.jpg]]</kbd>.",
+	"apihelp-linksuggest-description": "Suxerir enllaz a los editores na vista d'edición",
+	"apihelp-linksuggest-param-query": "Amosar suxerencies d'enllaces",
 	"linksuggest-desc": "Suxerir enllaces a los editores na vista d'edición",
 	"tog-disablelinksuggest": "Nun amosar suxerencies d'enllaces"
 }
