@@ -9,6 +9,7 @@
 	"apihelp-linksuggest-example-1": "{{doc-apihelp-example|linksuggest}}",
 	"apihelp-linksuggest-example-2": "{{doc-apihelp-example|linksuggest}}",
 	"apihelp-linksuggest-description": "{{doc-apihelp-description|linksuggest}}",
+	"apihelp-linksuggest-summary": "{{doc-apihelp-summary|linksuggest}}",
 	"apihelp-linksuggest-param-get": "{{doc-apihelp-param|linksuggest|get}}",
 	"apihelp-linksuggest-param-query": "{{doc-apihelp-param|linksuggest|query}}",
 	"linksuggest-desc": "{{desc|name=Link Suggest|url=https://www.mediawiki.org/wiki/Extension:LinkSuggest}}",
