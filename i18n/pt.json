@@ -6,6 +6,10 @@
 	},
 	"apihelp-linksuggest-example-1": "Procurar páginas no espaço nominal principal começadas por <kbd>Ashley</kbd>",
 	"apihelp-linksuggest-example-2": "Criar uma miniatura de <kbd>[[:File:Whatever.jpg]]</kbd>.",
+	"apihelp-linksuggest-description": "Sugere um link aos editores no modo de edição",
+	"apihelp-linksuggest-summary": "Sugere um link aos editores no modo de edição",
+	"apihelp-linksuggest-param-get": "Obter a apresentação",
+	"apihelp-linksuggest-param-query": "Apresentar sugestões de links",
 	"linksuggest-desc": "Sugere links aos editores no modo de edição",
 	"tog-disablelinksuggest": "Não apresentar sugestões de links"
 }
