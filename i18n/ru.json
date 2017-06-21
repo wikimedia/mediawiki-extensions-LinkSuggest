@@ -4,11 +4,16 @@
 			"AlexSm",
 			"KPu3uC B Poccuu",
 			"Александр Сигачёв",
-			"Okras"
+			"Okras",
+			"Facenapalm"
 		]
 	},
 	"apihelp-linksuggest-example-1": "Искать в основном пространстве имён страницы, начинающиеся на <kbd>Ashley</kbd>.",
 	"apihelp-linksuggest-example-2": "Создать эскиз <kbd>[[:File:Whatever.jpg]]</kbd>.",
+	"apihelp-linksuggest-description": "Предлагает редакторам ссылки при просмотре правки",
+	"apihelp-linksuggest-summary": "Предлагает редакторам ссылки при просмотре правки",
+	"apihelp-linksuggest-param-get": "Получение дисплея",
+	"apihelp-linksuggest-param-query": "Показать предложения ссылок",
 	"linksuggest-desc": "Предлагает редакторам ссылки в режиме редактирования",
 	"tog-disablelinksuggest": "Не показывать предложения ссылок"
 }
