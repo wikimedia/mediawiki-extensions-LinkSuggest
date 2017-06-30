@@ -9,6 +9,7 @@
 	"apihelp-linksuggest-example-2": "Crear una miniatura de <kbd>[[:File:Whatever.jpg]]</kbd>.",
 	"apihelp-linksuggest-description": "Suxerir enllaz a los editores na vista d'edición",
 	"apihelp-linksuggest-summary": "Suxerir enllaces a los editores na vista d'edición",
+	"apihelp-linksuggest-param-get": "Amosar",
 	"apihelp-linksuggest-param-query": "Amosar suxerencies d'enllaces",
 	"linksuggest-desc": "Suxerir enllaces a los editores na vista d'edición",
 	"tog-disablelinksuggest": "Nun amosar suxerencies d'enllaces"
