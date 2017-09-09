@@ -122,7 +122,7 @@ class LinkSuggest {
 
 		$results = array();
 
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 		$query = mb_strtolower( $query );
 
 		$res = $dbr->select(
