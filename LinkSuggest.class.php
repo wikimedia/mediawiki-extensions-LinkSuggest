@@ -11,7 +11,7 @@
  * @author Łukasz Garczewski (TOR) <tor at wikia-inc dot com>
  * @author Maciej Brencz <macbre@wikia-inc.com>
  * @author Jesús Martínez Novo <martineznovo at gmail dot com>
- * @author Jack Phoenix <jack@countervandalism.net>
+ * @author Jack Phoenix
  * @copyright Copyright © 2008-2009, Wikia Inc.
  * @copyright Copyright © 2011 Jesús Martínez Novo
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
