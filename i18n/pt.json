@@ -10,6 +10,6 @@
 	"apihelp-linksuggest-summary": "Sugerir uma hiperligação aos editores no modo de edição",
 	"apihelp-linksuggest-param-get": "Obter a apresentação",
 	"apihelp-linksuggest-param-query": "Apresentar sugestões de links",
-	"linksuggest-desc": "Sugere links aos editores no modo de edição",
+	"linksuggest-desc": "Sugere hiperligações aos editores no modo de edição",
 	"tog-disablelinksuggest": "Não apresentar sugestões de links"
 }
