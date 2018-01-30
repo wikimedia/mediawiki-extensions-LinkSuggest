@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hamilton Abreu"
+			"Hamilton Abreu",
+			"Athena in Wonderland"
 		]
 	},
 	"apihelp-linksuggest-example-1": "Procurar páginas no espaço nominal principal começadas por <kbd>Ashley</kbd>",
@@ -9,7 +10,7 @@
 	"apihelp-linksuggest-description": "Sugerir uma hiperligação aos editores no modo de edição",
 	"apihelp-linksuggest-summary": "Sugerir uma hiperligação aos editores no modo de edição",
 	"apihelp-linksuggest-param-get": "Obter a apresentação",
-	"apihelp-linksuggest-param-query": "Apresentar sugestões de links",
+	"apihelp-linksuggest-param-query": "Apresentar sugestões de hiperligações",
 	"linksuggest-desc": "Sugere hiperligações aos editores no modo de edição",
-	"tog-disablelinksuggest": "Não apresentar sugestões de links"
+	"tog-disablelinksuggest": "Não apresentar sugestões de hiperligações"
 }
