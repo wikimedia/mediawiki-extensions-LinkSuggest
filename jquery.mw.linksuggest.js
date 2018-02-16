@@ -51,7 +51,7 @@ $.widget( 'mw.linksuggest', {
 		this.element.autocomplete( this.options );
 		ac = this.element.data( 'autocomplete' );
 		// Overwrite the keydown event of autocomplete to fix some undesired key events
-		ac._off( this.element, 'keydown kepress' );
+		ac._off( this.element, 'keydown keypress' );
 		this._on( this.element, {
 			keydown: function( thisInstance ) {
 				return function() {
