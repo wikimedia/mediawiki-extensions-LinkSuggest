@@ -3,9 +3,16 @@
 		"authors": [
 			"Frankou",
 			"Justincheng12345",
-			"LNDDYL"
+			"LNDDYL",
+			"Kly"
 		]
 	},
+	"apihelp-linksuggest-example-1": "搜尋主命名空間裡以 <kbd>Ashley</kbd> 為開頭的頁面。",
+	"apihelp-linksuggest-example-2": "建立 <kbd>[[:File:Whatever.jpg]]</kbd> 的縮圖。",
+	"apihelp-linksuggest-description": "於編輯視圖上為編者建議連結",
+	"apihelp-linksuggest-summary": "於編輯視圖上為編者建議連結",
+	"apihelp-linksuggest-param-get": "取得顯示",
+	"apihelp-linksuggest-param-query": "顯示建議連結",
 	"linksuggest-desc": "於編輯視圖上為編者建議連結",
 	"tog-disablelinksuggest": "不顯示連結建議"
 }
