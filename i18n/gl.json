@@ -3,11 +3,15 @@
 		"authors": [
 			"Toliño",
 			"Elisardojm",
-			"Macofe"
+			"Macofe",
+			"Banjo"
 		]
 	},
 	"apihelp-linksuggest-example-1": "Buscar páxinas no espazo de nomes principal que empecen con <kbd>Ashley</kbd>.",
 	"apihelp-linksuggest-example-2": "Crear unha miniatura de <kbd>[[:File:Whatever.jpg]]</kbd>.",
+	"apihelp-linksuggest-description": "Suxerir ligazóns ós editores na vista de edición",
+	"apihelp-linksuggest-summary": "Suxerir ligazóns ós editores na vista de edición",
+	"apihelp-linksuggest-param-get": "Obter a presentación",
 	"apihelp-linksuggest-param-query": "Mostrar suxestións de ligazóns",
 	"linksuggest-desc": "Suxire ligazóns aos editores no modo de edición",
 	"tog-disablelinksuggest": "Non mostrar as ligazón suxeridas"
