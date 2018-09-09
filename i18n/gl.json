@@ -12,7 +12,7 @@
 	"apihelp-linksuggest-description": "Suxerir ligazóns ós editores na vista de edición",
 	"apihelp-linksuggest-summary": "Suxerir ligazóns ós editores na vista de edición",
 	"apihelp-linksuggest-param-get": "Obter a presentación",
-	"apihelp-linksuggest-param-query": "Mostrar suxestións de ligazóns",
+	"apihelp-linksuggest-param-query": "Amosar suxestións de ligazóns",
 	"linksuggest-desc": "Suxire ligazóns aos editores no modo de edición",
-	"tog-disablelinksuggest": "Non mostrar as ligazón suxeridas"
+	"tog-disablelinksuggest": "Non amosar as ligazón suxeridas"
 }
