@@ -25,10 +25,10 @@ class LinkSuggest {
 	 * extension on a per-user basis
 	 *
 	 * @param User $user
-	 * @param Preferences $preferences
+	 * @param mixed[] &$preferences
 	 * @return bool
 	 */
-	public static function onGetPreferences( $user, &$preferences ) {
+	public static function onGetPreferences( $user, array &$preferences ) {
 		$preferences['disablelinksuggest'] = array(
 			'type' => 'toggle',
 			'section' => 'editing/advancedediting',
