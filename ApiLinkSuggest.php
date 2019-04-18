@@ -5,7 +5,7 @@
  * @file
  * @ingroup API
  * @date 27 September 2015
- * @see http://www.mediawiki.org/wiki/API:Extensions#ApiSampleApiExtension.php
+ * @see https://www.mediawiki.org/wiki/API:Extensions#ApiSampleApiExtension.php
  */
 class ApiLinkSuggest extends ApiBase {
 
