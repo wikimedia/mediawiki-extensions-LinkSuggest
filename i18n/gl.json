@@ -4,10 +4,11 @@
 			"Toliño",
 			"Elisardojm",
 			"Macofe",
-			"Banjo"
+			"Banjo",
+			"Navhy"
 		]
 	},
-	"apihelp-linksuggest-example-1": "Buscar páxinas no espazo de nomes principal que empecen con <kbd>Ashley</kbd>.",
+	"apihelp-linksuggest-example-1": "Procurar páxinas no espazo de nomes principal que comecen con <kbd>Ashley</kbd>.",
 	"apihelp-linksuggest-example-2": "Crear unha miniatura de <kbd>[[:File:Whatever.jpg]]</kbd>.",
 	"apihelp-linksuggest-description": "Suxerir ligazóns ós editores na vista de edición",
 	"apihelp-linksuggest-summary": "Suxerir ligazóns ós editores na vista de edición",
