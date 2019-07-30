@@ -26,15 +26,13 @@ class LinkSuggest {
 	 *
 	 * @param User $user
 	 * @param mixed[] &$preferences
-	 * @return bool
 	 */
 	public static function onGetPreferences( $user, array &$preferences ) {
-		$preferences['disablelinksuggest'] = array(
+		$preferences['disablelinksuggest'] = [
 			'type' => 'toggle',
 			'section' => 'editing/advancedediting',
 			'label-message' => 'tog-disablelinksuggest',
-		);
-		return true;
+		];
 	}
 
 	/**
@@ -43,7 +41,6 @@ class LinkSuggest {
 	 *
 	 * @param EditPage $editPage
 	 * @param OutputPage $output
-	 * @return bool
 	 */
 	public static function onEditPage( EditPage $editPage, OutputPage $output ) {
 		global $wgUser;
@@ -51,7 +48,6 @@ class LinkSuggest {
 			// Load CSS and JS by using ResourceLoader
 			$output->addModules( 'ext.LinkSuggest' );
 		}
-		return true;
 	}
 
 	/**
@@ -120,24 +116,24 @@ class LinkSuggest {
 			$namespaces = $namespace;
 		}
 
-		$results = array();
+		$results = [];
 
 		$dbr = wfGetDB( DB_REPLICA );
 		$query = mb_strtolower( $query );
 
 		$res = $dbr->select(
-			array( 'querycache', 'page' ),
-			array( 'qc_namespace', 'qc_title' ),
-			array(
+			[ 'querycache', 'page' ],
+			[ 'qc_namespace', 'qc_title' ],
+			[
 				'qc_title = page_title',
 				'qc_namespace = page_namespace',
 				'page_is_redirect' => 0,
 				'qc_type' => 'Mostlinked',
 				'LOWER(CONVERT(qc_title using utf8))' . $dbr->buildLike( $query, $dbr->anyString() ),
 				'qc_namespace' => $namespaces
-			),
+			],
 			__METHOD__,
-			array( 'ORDER BY' => 'qc_value DESC', 'LIMIT' => 10 )
+			[ 'ORDER BY' => 'qc_value DESC', 'LIMIT' => 10 ]
 		);
 
 		foreach ( $res as $row ) {
@@ -146,17 +142,17 @@ class LinkSuggest {
 
 		$res = $dbr->select(
 			'page',
-			array( 'page_namespace', 'page_title' ),
-			array(
+			[ 'page_namespace', 'page_title' ],
+			[
 				'LOWER(CONVERT(page_title using utf8))' . $dbr->buildLike( $query, $dbr->anyString() ),
 				'page_is_redirect' => 0,
 				'page_namespace' => $namespaces
-			),
+			],
 			__METHOD__,
-			array(
+			[
 				'ORDER BY' => 'page_title ASC',
 				'LIMIT' => ( 15 - count( $results ) )
-			)
+			]
 		);
 
 		foreach ( $res as $row ) {
@@ -165,10 +161,10 @@ class LinkSuggest {
 
 		$results = array_unique( $results );
 
-		$out = array(
+		$out = [
 			'query' => $originalQuery,
 			'suggestions' => array_values( $results )
-		);
+		];
 
 		return $out;
 	}
