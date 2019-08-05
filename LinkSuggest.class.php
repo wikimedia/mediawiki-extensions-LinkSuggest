@@ -76,8 +76,6 @@ class LinkSuggest {
 	 * @return array $ar Link suggestions
 	 */
 	public static function get( $originalQuery ) {
-		global $wgContLang;
-
 		// trim passed query and replace spaces by underscores
 		// - this is how MediaWiki stores article titles in database
 		$query = urldecode( trim( $originalQuery ) );
@@ -94,10 +92,11 @@ class LinkSuggest {
 			// try to get the index by canonical name first
 			$namespace = MWNamespace::getCanonicalIndex( strtolower( $namespaceName ) );
 			if ( $namespace == null ) {
+				$contLang = MediaWiki\MediaWikiServices::getInstance()->getContentLanguage();
 				// if we failed, try looking through localized namespace names
 				$namespace = array_search(
 					ucfirst( $namespaceName ),
-					$wgContLang->getNamespaces()
+					$contLang->getNamespaces()
 				);
 				if ( empty( $namespace ) ) {
 					// getting here means our "namespace" is not real and can only
@@ -177,10 +176,9 @@ class LinkSuggest {
 	 * @return string Formatted title (prefixed with localised namespace)
 	 */
 	public static function formatTitle( $namespace, $title ) {
-		global $wgContLang;
-
 		if ( $namespace != NS_MAIN ) {
-			$title = $wgContLang->getNsText( $namespace ) . ':' . $title;
+			$contLang = MediaWiki\MediaWikiServices::getInstance()->getContentLanguage();
+			$title = $contLang->getNsText( $namespace ) . ':' . $title;
 		}
 
 		return str_replace( '_', ' ', $title );
