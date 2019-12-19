@@ -13,6 +13,9 @@
 	"url": "https://www.mediawiki.org/wiki/Extension:LinkSuggest",
 	"descriptionmsg": "linksuggest-desc",
 	"type": "other",
+	"requires" : {
+		"MediaWiki": ">= 1.34.0"
+	},
 	"MessagesDirs": {
 		"LinkSuggest": [
 			"i18n"
@@ -40,7 +43,7 @@
 	"ResourceModules": {
 		"ext.LinkSuggest": {
 			"scripts": "jquery.mw.linksuggest.js",
-			"dependencies": [ "jquery.ui.autocomplete", "mediawiki.api" ]
+			"dependencies": [ "jquery.ui", "mediawiki.api" ]
 		}
 	},
 	"manifest_version": 1
