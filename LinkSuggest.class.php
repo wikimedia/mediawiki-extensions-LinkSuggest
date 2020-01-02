@@ -43,8 +43,7 @@ class LinkSuggest {
 	 * @param OutputPage $output
 	 */
 	public static function onEditPage( EditPage $editPage, OutputPage $output ) {
-		global $wgUser;
-		if ( $wgUser->getOption( 'disablelinksuggest' ) != true ) {
+		if ( $output->getUser()->getOption( 'disablelinksuggest' ) != true ) {
 			// Load CSS and JS by using ResourceLoader
 			$output->addModules( 'ext.LinkSuggest' );
 		}
