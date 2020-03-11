@@ -29,12 +29,8 @@
 		"linksuggest": "ApiLinkSuggest"
 	},
 	"Hooks": {
-		"EditPage::showEditForm:initial": [
-			"LinkSuggest::onEditPage"
-		],
-		"GetPreferences": [
-			"LinkSuggest::onGetPreferences"
-		]
+		"EditPage::showEditForm:initial": "LinkSuggest::onEditPage",
+		"GetPreferences": "LinkSuggest::onGetPreferences"
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
