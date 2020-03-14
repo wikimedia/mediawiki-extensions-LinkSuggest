@@ -18,6 +18,8 @@
  * @link https://www.mediawiki.org/wiki/Extension:LinkSuggest Documentation
  */
 
+use MediaWiki\MediaWikiServices;
+
 class LinkSuggest {
 
 	/**
@@ -57,7 +59,7 @@ class LinkSuggest {
 	public static function getImage( $imageName ) {
 		$out = 'N/A';
 		try {
-			$img = wfFindFile( $imageName );
+			$img = MediaWikiServices::getInstance()->getRepoGroup()->findFile( $imageName );
 			if ( $img ) {
 				$out = $img->createThumb( 180 );
 			}
