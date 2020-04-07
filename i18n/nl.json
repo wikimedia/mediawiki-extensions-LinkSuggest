@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Siebrand",
-			"Mainframe98"
+			"Mainframe98",
+			"Siebrand"
 		]
 	},
 	"apihelp-linksuggest-example-1": "Zoek naar pagina's in de hoofdnaamruimte beginnend met <kbd>Ashley</kbd>.",

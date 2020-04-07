@@ -1,12 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Toliño",
-			"Elisardojm",
-			"Macofe",
 			"Banjo",
-			"Navhy",
-			"Iváns"
+			"Elisardojm",
+			"Iváns",
+			"Macofe",
+			"Toliño"
 		]
 	},
 	"apihelp-linksuggest-example-1": "Procurar páxinas no espazo de nomes principal que comecen con <kbd>Ashley</kbd>.",

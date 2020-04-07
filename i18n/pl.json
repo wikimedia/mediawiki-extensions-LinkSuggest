@@ -1,12 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sp5uhe",
-			"Woytecr",
 			"Chrumps",
 			"Macofe",
+			"Rail",
 			"Railfail536",
-			"Rail"
+			"Sp5uhe",
+			"Woytecr"
 		]
 	},
 	"apihelp-linksuggest-example-1": "Wyszukaj strony w przestrzeni głównej rozpoczynające się od <kbd>Ashley</kbd>.",

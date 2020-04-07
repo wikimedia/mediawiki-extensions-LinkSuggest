@@ -1,12 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sherbrooke",
-			"Orlodrim",
-			"Macofe",
 			"Gomoko",
-			"Wladek92",
-			"Thibaut120094"
+			"Macofe",
+			"Orlodrim",
+			"Sherbrooke",
+			"Thibaut120094",
+			"Wladek92"
 		]
 	},
 	"apihelp-linksuggest-example-1": "Rechercher les pages dans l’espace principal dont le nom commence par <kbd>Ashley</kbd>.",

@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Nghtwlkr",
-			"Jon Harald Søby"
+			"Jon Harald Søby",
+			"Nghtwlkr"
 		]
 	},
 	"apihelp-linksuggest-example-1": "Søk etter sider i hovednavnerommet som begynner med <kbd>Ashley</kbd>.",

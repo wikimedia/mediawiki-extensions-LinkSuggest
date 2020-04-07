@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"2nd-player",
+			"Macofe",
 			"Schu",
 			"Shirayuki",
-			"Sujiniku",
-			"2nd-player",
-			"Macofe"
+			"Sujiniku"
 		]
 	},
 	"apihelp-linksuggest-example-1": "<kbd>Ashley</kbd>で始まる標準名前空間のページを検索します。",

@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Daemorris",
-			"Giro720",
-			"Dianakc",
 			"!Silent",
-			"Eduardo Addad de Oliveira"
+			"Daemorris",
+			"Dianakc",
+			"Eduardo Addad de Oliveira",
+			"Giro720"
 		]
 	},
 	"apihelp-linksuggest-example-1": "Procurar páginas no domínio principal iniciadas com <kbd>Ashley</kbd>.",

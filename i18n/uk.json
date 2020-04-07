@@ -2,10 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"Base",
-			"Ua2004",
-			"Ата",
 			"Macofe",
-			"Piramidion"
+			"Piramidion",
+			"Ua2004",
+			"Ата"
 		]
 	},
 	"apihelp-linksuggest-example-1": "Пошук сторінок в основному просторі, що починаються на <kbd>Ashley</kbd>.",
