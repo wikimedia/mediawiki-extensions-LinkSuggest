@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
-			"Manco Capac"
+			"Manco Capac",
+			"MuratTheTurkish"
 		]
 	},
 	"apihelp-linksuggest-example-1": "Ana ad alanındaki <kbd>Ashley</kbd> ile başlayan sayfaları arayın.",
@@ -10,7 +11,7 @@
 	"apihelp-linksuggest-description": "Düzenleme görünümünde editörlere bağlantı öner",
 	"apihelp-linksuggest-summary": "Düzenleme görünümünde editörlere bağlantı öner",
 	"apihelp-linksuggest-param-get": "Ekranı al",
-	"apihelp-linksuggest-param-query": "Bağlantı önerilerini göster",
+	"apihelp-linksuggest-param-query": "Bağlantı önerilerini gösterin",
 	"linksuggest-desc": "Düzenleme görünümünde editörlere bağlantılar önerir",
 	"tog-disablelinksuggest": "Bağlantı önermesini gösterme"
 }
