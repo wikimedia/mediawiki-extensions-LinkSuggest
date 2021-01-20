@@ -13,8 +13,6 @@ class ApiLinkSuggest extends ApiBase {
 	 * Main entry point.
 	 */
 	public function execute() {
-		$user = $this->getUser();
-
 		// Get the request parameters
 		$params = $this->extractRequestParams();
 		$this->requireAtLeastOneParameter( $params, 'query' );

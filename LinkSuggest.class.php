@@ -109,8 +109,9 @@ class LinkSuggest {
 
 		// list of namespaces to search in
 		if ( empty( $namespace ) ) {
-			// search only within content namespaces - default behaviour
-			$namespaces = MWNamespace::getContentNamespaces();
+			// search only within the configured namespaces - default behaviour
+			$config = MediaWiki\MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'linksuggest' );
+			$namespaces = $config->get( 'LinkSuggestFromNamespaces' );
 		} else {
 			// search only within a namespace from query
 			$namespaces = $namespace;

@@ -1,6 +1,6 @@
 {
 	"name": "LinkSuggest",
-	"version": "2.0.1",
+	"version": "2.1.0",
 	"author": [
 		"Inez Korczyński",
 		"Bartek Łapiński",
@@ -31,6 +31,14 @@
 	"Hooks": {
 		"EditPage::showEditForm:initial": "LinkSuggest::onEditPage",
 		"GetPreferences": "LinkSuggest::onGetPreferences"
+	},
+	"config": {
+		"LinkSuggestFromNamespaces": [
+			0
+		]
+	},
+	"ConfigRegistry": {
+		"linksuggest": "GlobalVarConfig::newInstance"
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
