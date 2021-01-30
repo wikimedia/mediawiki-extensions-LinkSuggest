@@ -13,7 +13,7 @@
 	"url": "https://www.mediawiki.org/wiki/Extension:LinkSuggest",
 	"descriptionmsg": "linksuggest-desc",
 	"type": "other",
-	"requires" : {
+	"requires": {
 		"MediaWiki": ">= 1.34.0"
 	},
 	"MessagesDirs": {
