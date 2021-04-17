@@ -19,6 +19,7 @@
 		"no-jquery/variable-pattern": "warn",
 		"no-jquery/no-parse-html-literal": "warn",
 		"no-jquery/no-sizzle": "warn",
-		"no-jquery/no-global-selector": "warn"
+		"no-jquery/no-global-selector": "warn",
+		"block-scoped-var": "warn"
 	}
 }
