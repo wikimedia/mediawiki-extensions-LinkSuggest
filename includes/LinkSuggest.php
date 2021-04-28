@@ -14,7 +14,7 @@
  * @author Jack Phoenix
  * @copyright Copyright © 2008-2009, Wikia Inc.
  * @copyright Copyright © 2011 Jesús Martínez Novo
- * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
+ * @license GPL-2.0-or-later
  * @link https://www.mediawiki.org/wiki/Extension:LinkSuggest Documentation
  */
 
@@ -54,6 +54,7 @@ class LinkSuggest {
 	/**
 	 * Creates a thumbnail from an image name.
 	 *
+	 * @param string $imageName
 	 * @return string The thumbnail image on success, 'N/A' on failure
 	 */
 	public static function getImage( $imageName ) {

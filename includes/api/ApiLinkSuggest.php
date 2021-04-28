@@ -11,6 +11,8 @@ class ApiLinkSuggest extends ApiBase {
 
 	/**
 	 * Main entry point.
+	 *
+	 * @return bool true
 	 */
 	public function execute() {
 		// Get the request parameters
@@ -25,7 +27,7 @@ class ApiLinkSuggest extends ApiBase {
 
 		// Top level
 		$this->getResult()->addValue( null, $this->getModuleName(),
-			array( 'result' => $output )
+			[ 'result' => $output ]
 		);
 
 		return true;
@@ -35,25 +37,27 @@ class ApiLinkSuggest extends ApiBase {
 	 * @return array
 	 */
 	public function getAllowedParams() {
-		return array(
-			'get' => array(
-				ApiBase::PARAM_TYPE => array( 'image', 'suggestions' ),
+		return [
+			'get' => [
+				ApiBase::PARAM_TYPE => [ 'image', 'suggestions' ],
 				ApiBase::PARAM_REQUIRED => true
-			),
-			'query' => array(
+			],
+			'query' => [
 				ApiBase::PARAM_TYPE => 'string',
 				ApiBase::PARAM_REQUIRED => true
-			)
-		);
+			]
+		];
 	}
 
 	/**
 	 * @see ApiBase::getExamplesMessages()
+	 *
+	 * @return array
 	 */
 	protected function getExamplesMessages() {
-		return array(
+		return [
 			'action=linksuggest&get=suggestions&query=Ashley' => 'apihelp-linksuggest-example-1',
 			'action=linksuggest&get=image&query=Whatever.jpg' => 'apihelp-linksuggest-example-2'
-		);
+		];
 	}
 }

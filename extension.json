@@ -22,8 +22,8 @@
 		]
 	},
 	"AutoloadClasses": {
-		"ApiLinkSuggest": "ApiLinkSuggest.php",
-		"LinkSuggest": "LinkSuggest.class.php"
+		"ApiLinkSuggest": "includes/api/ApiLinkSuggest.php",
+		"LinkSuggest": "includes/LinkSuggest.php"
 	},
 	"APIModules": {
 		"linksuggest": "ApiLinkSuggest"
