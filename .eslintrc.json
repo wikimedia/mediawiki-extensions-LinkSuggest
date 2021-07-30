@@ -10,7 +10,6 @@
 		"jQuery": false
 	},
 	"rules": {
-		"vars-on-top": "warn",
 		"eqeqeq": "warn",
 		"no-unused-vars": "warn",
 		"no-underscore-dangle": "warn",
