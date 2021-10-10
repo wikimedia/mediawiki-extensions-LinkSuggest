@@ -91,10 +91,12 @@ class LinkSuggest {
 
 			$namespaceName = $queryParts[0];
 
+			$services = MediaWikiServices::getInstance();
+
 			// try to get the index by canonical name first
-			$namespace = MWNamespace::getCanonicalIndex( strtolower( $namespaceName ) );
+			$namespace = $services->getNamespaceInfo()->getCanonicalIndex( strtolower( $namespaceName ) );
 			if ( $namespace == null ) {
-				$contLang = MediaWiki\MediaWikiServices::getInstance()->getContentLanguage();
+				$contLang = $services->getContentLanguage();
 				// if we failed, try looking through localized namespace names
 				$namespace = array_search(
 					ucfirst( $namespaceName ),
