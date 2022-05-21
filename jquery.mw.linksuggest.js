@@ -231,7 +231,7 @@
 				if ( c == '[' && i > 0 && text.charAt( i - 1 ) == '[' ) {
 					sQueryReal = text.substr( i + 1, ( caret - i - 1 ) );
 					if ( sQueryReal.charAt( 0 ) == ':' ) {
-						sQueryReal = sQueryReal.substr( 1 );
+						sQueryReal = sQueryReal.slice( 1 );
 						format = '[[:$1]]';
 					} else {
 						format = '[[$1]]';
@@ -248,17 +248,17 @@
 						return false;
 					}
 					sQueryReal = text.substr( i + 1, ( caret - i - 1 ) );
-					if ( sQueryReal.length >= 6 && sQueryReal.toLowerCase().substr( 0, 6 ) == 'subst:' ) {
+					if ( sQueryReal.length >= 6 && sQueryReal.toLowerCase().slice( 0, 6 ) == 'subst:' ) {
 						if ( sQueryReal.length >= 7 && sQueryReal.charAt( 6 ) == ':' ) {
-							sQueryReal = sQueryReal.substr( 7 );
+							sQueryReal = sQueryReal.slice( 7 );
 							format = '{{subst::$1}}';
 						} else {
-							sQueryReal = 'Template:' + sQueryReal.substr( 6 );
+							sQueryReal = 'Template:' + sQueryReal.slice( 6 );
 							stripPrefix = true;
 							format = '{{subst:$1}}';
 						}
 					} else if ( sQueryReal.charAt( 0 ) == ':' ) {
-						sQueryReal = sQueryReal.substr( 1 );
+						sQueryReal = sQueryReal.slice( 1 );
 						format = '{{:$1}}';
 					} else {
 						sQueryReal = 'Template:' + sQueryReal;
@@ -295,7 +295,7 @@
 				if ( stripPrefix ) {
 					var pos = n.indexOf( ':' );
 					if ( pos != -1 ) {
-						n = n.substr( pos + 1 );
+						n = n.slice( pos + 1 );
 					}
 				}
 				return { label: n, value: format.replace( '$1', n ) };
@@ -307,7 +307,7 @@
 			var scrollTop = this.element[ 0 ].scrollTop,
 				text = this._getText(),
 				caret = this._getCaret(),
-				prefix = oItem.value.substr( 0, 2 );
+				prefix = oItem.value.slice( 0, 2 );
 
 			for ( var i = caret - 2; i >= 0; i-- ) { // break for templates and normal links
 				if ( text.substr( i, 2 ) == prefix ) {
@@ -315,8 +315,8 @@
 				}
 			}
 
-			var textBefore = text.substr( 0, i ),
-				newVal = textBefore + oItem.value + text.substr( caret );
+			var textBefore = text.slice( 0, Math.max( 0, i ) ),
+				newVal = textBefore + oItem.value + text.slice( caret );
 			this.element.val( newVal );
 
 			this._setCaret( textBefore.length + oItem.value.length );
@@ -383,7 +383,7 @@
 					break;
 				}
 			}
-			textBeforePosition = text.substr( 0, initialCaret );
+			textBeforePosition = text.slice( 0, Math.max( 0, initialCaret ) );
 			// If the control isnot the same, clear the cached tester element
 			if ( cachedElement !== control ) {
 				cachedElement = control;
