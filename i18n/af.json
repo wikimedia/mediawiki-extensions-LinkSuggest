@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Naudefj"
+			"Naudefj",
+			"Rooiratel"
 		]
 	},
+	"apihelp-linksuggest-example-1": "Soek vir bladsye in die hoofnaamruimte wat met <kbd>Ashley</kbd> begin.",
 	"tog-disablelinksuggest": "Moet nie skakel-voorstelle wys nie"
 }
