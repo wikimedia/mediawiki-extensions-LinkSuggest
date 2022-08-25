@@ -45,7 +45,8 @@ class LinkSuggest {
 	 * @param OutputPage $output
 	 */
 	public static function onEditPage( EditPage $editPage, OutputPage $output ) {
-		if ( $output->getUser()->getOption( 'disablelinksuggest' ) != true ) {
+		$userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
+		if ( $userOptionsManager->getOption( $output->getUser(), 'disablelinksuggest' ) != true ) {
 			// Load CSS and JS by using ResourceLoader
 			$output->addModules( 'ext.LinkSuggest' );
 		}
