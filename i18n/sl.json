@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"apihelp-linksuggest-example-1": "Poišči strani v glavnem imenskem prostoru, ki se začnejo z <kbd>Ashley</kbd>.",
+	"apihelp-linksuggest-example-2": "Ustvari sličico <kbd>[[:File:Whatever.jpg]]</kbd>.",
+	"apihelp-linksuggest-description": "Urejevalcem v pogledu za urejanje predlaga povezave",
+	"apihelp-linksuggest-summary": "Urejevalcem v pogledu za urejanje predlaga povezave",
+	"apihelp-linksuggest-param-get": "Pridobi prikaz",
+	"apihelp-linksuggest-param-query": "Prikaži predloge povezav",
+	"linksuggest-desc": "Urejevalcem v pogledu za urejanje predlaga povezave",
+	"tog-disablelinksuggest": "Ne prikazuj predlogov za povezave"
+}
