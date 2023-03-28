@@ -448,6 +448,5 @@
 
 // Implementation: This should be done injecting this code into MediaWiki, not in this JS file
 $( function () {
-	// Apply font-style for bug in IE. This should be done using a style sheet
-	$( '#wpTextbox1' ).css( 'font-family', 'monospace' ).linksuggest();
+	$( '#wpTextbox1' ).linksuggest();
 } );
