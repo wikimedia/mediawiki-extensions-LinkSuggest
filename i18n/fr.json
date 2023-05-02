@@ -6,15 +6,16 @@
 			"Orlodrim",
 			"Sherbrooke",
 			"Thibaut120094",
-			"Wladek92"
+			"Wladek92",
+			"Verdy p"
 		]
 	},
 	"apihelp-linksuggest-example-1": "Rechercher les pages dans l’espace principal dont le nom commence par <kbd>Ashley</kbd>.",
 	"apihelp-linksuggest-example-2": "Créer une vignette de <kbd>[[:File:Whatever.jpg]]</kbd>.",
-	"apihelp-linksuggest-description": "Suggérer un lien aux éditeurs sur l’affichage de modification",
-	"apihelp-linksuggest-summary": "Suggérer un lien aux éditeurs dans la fenêtre d’édition",
+	"apihelp-linksuggest-description": "Suggérer un lien aux rédacteurs dans la vue de modification",
+	"apihelp-linksuggest-summary": "Suggérer un lien aux rédacteurs dans la vue de modification",
 	"apihelp-linksuggest-param-get": "Obtenir l’affichage",
 	"apihelp-linksuggest-param-query": "Afficher les suggestions de liens",
-	"linksuggest-desc": "Dans la fenêtre d'édition, suggère des liens aux contributeurs",
+	"linksuggest-desc": "Suggère des liens aux rédacteurs dans la vue de modification",
 	"tog-disablelinksuggest": "Ne pas montrer les liens suggérés"
 }
