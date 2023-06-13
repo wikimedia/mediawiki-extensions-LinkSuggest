@@ -270,7 +270,7 @@
 				}
 			}
 
-			if ( sQueryStartAt >= 0 && sQueryReal.length > this.options.minLength ) {
+			if ( sQueryStartAt >= 0 && sQueryReal.length >= this.options.minLength ) {
 				api = new mw.Api();
 				api.get( {
 					action: 'linksuggest',
