@@ -4,7 +4,6 @@
 	},
 	"apihelp-linksuggest-example-1": "Search for pages in the main namespace beginning with <kbd>Ashley</kbd>.",
 	"apihelp-linksuggest-example-2": "Create a thumbnail of <kbd>[[:File:Whatever.jpg]]</kbd>.",
-	"apihelp-linksuggest-description": "Suggest link to editors on edit view",
 	"apihelp-linksuggest-summary": "Suggest link to editors on edit view",
 	"apihelp-linksuggest-param-get": "Get the display",
 	"apihelp-linksuggest-param-query": "Show suggestions of links",
