@@ -11,7 +11,6 @@
 	},
 	"apihelp-linksuggest-example-1": "Procurar páginas no domínio principal iniciadas com <kbd>Ashley</kbd>.",
 	"apihelp-linksuggest-example-2": "Criar uma miniatura de <kbd>[[:File:Whatever.jpg]]</kbd>.",
-	"apihelp-linksuggest-description": "Sugerir uma hiperligação aos editores no modo de edição",
 	"apihelp-linksuggest-summary": "Sugerir uma hiperligação aos editores no modo de edição",
 	"apihelp-linksuggest-param-get": "Obter a apresentação",
 	"apihelp-linksuggest-param-query": "Apresentar sugestões de links",

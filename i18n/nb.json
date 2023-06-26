@@ -7,7 +7,6 @@
 	},
 	"apihelp-linksuggest-example-1": "Søk etter sider i hovednavnerommet som begynner med <kbd>Ashley</kbd>.",
 	"apihelp-linksuggest-example-2": "Opprett et miniatyrbilde av <kbd>[[:File:Whatever.jpg]]</kbd>.",
-	"apihelp-linksuggest-description": "Foreslå lenke til bidragsytere under redigering",
 	"apihelp-linksuggest-summary": "Foreslå lenke til bidragsytere under redigering",
 	"apihelp-linksuggest-param-get": "Hent visningen",
 	"apihelp-linksuggest-param-query": "Vis lenkeforslag",

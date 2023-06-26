@@ -11,7 +11,6 @@
 	},
 	"apihelp-linksuggest-example-1": "搜索主命名空间中以<kbd>Ashley</kbd>开头的页面。",
 	"apihelp-linksuggest-example-2": "创建<kbd>[[:File:Whatever.jpg]]</kbd>的缩略图。",
-	"apihelp-linksuggest-description": "在编辑视图上给编者建议链接",
 	"apihelp-linksuggest-summary": "在编辑视图上给编者建议链接",
 	"apihelp-linksuggest-param-get": "获取显示",
 	"apihelp-linksuggest-param-query": "显示链接的建议",

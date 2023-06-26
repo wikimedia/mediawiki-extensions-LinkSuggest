@@ -7,7 +7,6 @@
 	},
 	"apihelp-linksuggest-example-1": "Zoek naar pagina's in de hoofdnaamruimte beginnend met <kbd>Ashley</kbd>.",
 	"apihelp-linksuggest-example-2": "Maak een miniatuur van <kbd>[[:File:Whatever.jpg]]</kbd>.",
-	"apihelp-linksuggest-description": "Koppelingen voorstellen aan bewerkers tijdens het bewerken",
 	"apihelp-linksuggest-param-query": "Koppeling suggesties weergeven",
 	"linksuggest-desc": "Koppelingen voorstellen tijdens het bewerken",
 	"tog-disablelinksuggest": "Geen verwijzigssuggesties weergeven"

@@ -6,7 +6,6 @@
 	},
 	"apihelp-linksuggest-example-1": "Cercar paginas in le spatio de nomines principal le nomine del quales comencia con <kbd>Ashley</kbd>.",
 	"apihelp-linksuggest-example-2": "Crear un miniatura de <kbd>[[:File:Whatever.jpg]]</kbd>.",
-	"apihelp-linksuggest-description": "Suggere ligamines a redactores active in modo de modification",
 	"apihelp-linksuggest-summary": "Suggere ligamines a redactores active in modo de modification",
 	"apihelp-linksuggest-param-get": "Obtener le visualisation",
 	"apihelp-linksuggest-param-query": "Monstrar suggestiones de ligamines",
