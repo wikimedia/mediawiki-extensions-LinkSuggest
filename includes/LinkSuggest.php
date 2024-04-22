@@ -21,12 +21,20 @@
 use MediaWiki\Hook\EditPage__showEditForm_initialHook;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Preferences\Hook\GetPreferencesHook;
+use MediaWiki\User\UserOptionsManager;
 
 // phpcs:disable Squiz.Classes.ValidClassName.NotCamelCaps
 class LinkSuggest implements
 	EditPage__showEditForm_initialHook,
 	GetPreferencesHook
 {
+	private UserOptionsManager $userOptionsManager;
+
+	public function __construct(
+		UserOptionsManager $userOptionsManager
+	) {
+		$this->userOptionsManager = $userOptionsManager;
+	}
 
 	/**
 	 * Adds the new toggle to Special:Preferences for disabling LinkSuggest
@@ -51,8 +59,7 @@ class LinkSuggest implements
 	 * @param OutputPage $output
 	 */
 	public function onEditPage__showEditForm_initial( $editPage, $output ) {
-		$userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
-		if ( $userOptionsManager->getOption( $output->getUser(), 'disablelinksuggest' ) != true ) {
+		if ( $this->userOptionsManager->getOption( $output->getUser(), 'disablelinksuggest' ) != true ) {
 			// Load CSS and JS by using ResourceLoader
 			$output->addModules( 'ext.LinkSuggest' );
 		}

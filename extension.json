@@ -34,7 +34,10 @@
 	},
 	"HookHandlers": {
 		"main": {
-			"class": "LinkSuggest"
+			"class": "LinkSuggest",
+			"services": [
+				"UserOptionsManager"
+			]
 		}
 	},
 	"config": {
