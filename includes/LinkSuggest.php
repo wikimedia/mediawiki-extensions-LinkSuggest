@@ -18,9 +18,15 @@
  * @link https://www.mediawiki.org/wiki/Extension:LinkSuggest Documentation
  */
 
+use MediaWiki\Hook\EditPage__showEditForm_initialHook;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Preferences\Hook\GetPreferencesHook;
 
-class LinkSuggest {
+// phpcs:disable Squiz.Classes.ValidClassName.NotCamelCaps
+class LinkSuggest implements
+	EditPage__showEditForm_initialHook,
+	GetPreferencesHook
+{
 
 	/**
 	 * Adds the new toggle to Special:Preferences for disabling LinkSuggest
@@ -29,7 +35,7 @@ class LinkSuggest {
 	 * @param User $user
 	 * @param mixed[] &$preferences
 	 */
-	public static function onGetPreferences( $user, array &$preferences ) {
+	public function onGetPreferences( $user, &$preferences ) {
 		$preferences['disablelinksuggest'] = [
 			'type' => 'toggle',
 			'section' => 'editing/advancedediting',
@@ -44,7 +50,7 @@ class LinkSuggest {
 	 * @param EditPage $editPage
 	 * @param OutputPage $output
 	 */
-	public static function onEditPage( EditPage $editPage, OutputPage $output ) {
+	public function onEditPage__showEditForm_initial( $editPage, $output ) {
 		$userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
 		if ( $userOptionsManager->getOption( $output->getUser(), 'disablelinksuggest' ) != true ) {
 			// Load CSS and JS by using ResourceLoader

@@ -29,8 +29,13 @@
 		"linksuggest": "ApiLinkSuggest"
 	},
 	"Hooks": {
-		"EditPage::showEditForm:initial": "LinkSuggest::onEditPage",
-		"GetPreferences": "LinkSuggest::onGetPreferences"
+		"EditPage::showEditForm:initial": "main",
+		"GetPreferences": "main"
+	},
+	"HookHandlers": {
+		"main": {
+			"class": "LinkSuggest"
+		}
 	},
 	"config": {
 		"LinkSuggestFromNamespaces": [
