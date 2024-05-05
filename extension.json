@@ -1,13 +1,14 @@
 {
 	"name": "LinkSuggest",
-	"version": "2.1.0",
+	"version": "2.2.0",
 	"author": [
 		"Inez Korczyński",
 		"Bartek Łapiński",
 		"Łukasz Garczewski",
 		"Maciej Brencz",
 		"Jesús Martínez Novo",
-		"Jack Phoenix"
+		"Jack Phoenix",
+		"Jayden Bailey"
 	],
 	"license-name": "GPL-2.0-or-later",
 	"url": "https://www.mediawiki.org/wiki/Extension:LinkSuggest",
@@ -22,11 +23,7 @@
 		]
 	},
 	"AutoloadClasses": {
-		"ApiLinkSuggest": "includes/api/ApiLinkSuggest.php",
 		"LinkSuggest": "includes/LinkSuggest.php"
-	},
-	"APIModules": {
-		"linksuggest": "ApiLinkSuggest"
 	},
 	"Hooks": {
 		"EditPage::showEditForm:initial": "main",
@@ -54,7 +51,13 @@
 	},
 	"ResourceModules": {
 		"ext.LinkSuggest": {
-			"scripts": "jquery.mw.linksuggest.js",
+			"packageFiles": [
+				"jquery.mw.linksuggest.js",
+				{
+					"name": "config.json",
+					"config": [ "LinkSuggestFromNamespaces" ]
+				}
+			],
 			"dependencies": [ "jquery.ui", "mediawiki.api" ]
 		}
 	},

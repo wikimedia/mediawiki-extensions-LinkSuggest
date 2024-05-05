@@ -7,11 +7,6 @@
 			"Umherirrender"
 		]
 	},
-	"apihelp-linksuggest-example-1": "{{doc-apihelp-example|linksuggest}}",
-	"apihelp-linksuggest-example-2": "{{doc-apihelp-example|linksuggest}}",
-	"apihelp-linksuggest-summary": "{{doc-apihelp-summary|linksuggest}}",
-	"apihelp-linksuggest-param-get": "{{doc-apihelp-param|linksuggest|get}}\n\n[https://phabricator.wikimedia.org/T168056 Phabricator T168056: Unsuccessful attempt to get clarification of what this message means.]",
-	"apihelp-linksuggest-param-query": "{{doc-apihelp-param|linksuggest|query}}",
 	"linksuggest-desc": "{{desc|name=Link Suggest|url=https://www.mediawiki.org/wiki/Extension:LinkSuggest}}",
 	"tog-disablelinksuggest": "Used as checkbox label in [[Special:Preferences]]."
 }

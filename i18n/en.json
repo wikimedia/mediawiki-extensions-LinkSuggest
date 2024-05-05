@@ -2,11 +2,6 @@
 	"@metadata": {
 		"authors": []
 	},
-	"apihelp-linksuggest-example-1": "Search for pages in the main namespace beginning with <kbd>Ashley</kbd>.",
-	"apihelp-linksuggest-example-2": "Create a thumbnail of <kbd>[[:File:Whatever.jpg]]</kbd>.",
-	"apihelp-linksuggest-summary": "Suggest link to editors on edit view",
-	"apihelp-linksuggest-param-get": "Get the display",
-	"apihelp-linksuggest-param-query": "Show suggestions of links",
 	"linksuggest-desc": "Suggests links to editors on edit view",
 	"tog-disablelinksuggest": "Do not show link suggest"
 }
