@@ -47,7 +47,7 @@
 				};
 			// Opera only prevents default behavior on keypress, needed for
 			// capturing arrows and enter
-			this.options = $.extend( opt, this.options );
+			this.options = Object.assign( opt, this.options );
 			this.element.autocomplete( this.options );
 			ac = this.element.data( 'autocomplete' );
 			// Overwrite the keydown event of autocomplete to fix some undesired key events

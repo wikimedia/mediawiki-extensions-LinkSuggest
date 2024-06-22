@@ -20,6 +20,7 @@
 		"no-jquery/no-global-selector": "warn",
 		"block-scoped-var": "warn",
 		"unicorn/prefer-string-slice": "warn",
-		"no-jquery/no-extend": "warn"
+		"no-jquery/no-extend": "warn",
+		"es-x/no-object-assign": "warn"
 	}
 }
