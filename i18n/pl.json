@@ -9,10 +9,6 @@
 			"Woytecr"
 		]
 	},
-	"apihelp-linksuggest-example-1": "Wyszukaj strony w przestrzeni głównej rozpoczynające się od <kbd>Ashley</kbd>.",
-	"apihelp-linksuggest-example-2": "Utwórz miniaturkę <kbd>[[:File:Whatever.jpg]]</kbd>.",
-	"apihelp-linksuggest-summary": "Proponuje linki edytorom podczas edycji",
-	"apihelp-linksuggest-param-query": "Pokaż sugestie linków",
 	"linksuggest-desc": "Proponuje linki podczas edycji",
 	"tog-disablelinksuggest": "Nie pokazuj sugerowanych linków"
 }

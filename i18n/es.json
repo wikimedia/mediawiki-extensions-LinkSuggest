@@ -6,10 +6,6 @@
 			"Macofe"
 		]
 	},
-	"apihelp-linksuggest-example-1": "Buscar páginas en el espacio de nombres principal que comiencen con <kbd>Ashley</kbd>.",
-	"apihelp-linksuggest-example-2": "Crear una miniatura de <kbd>[[:File:Whatever.jpg]]</kbd>.",
-	"apihelp-linksuggest-param-get": "Obtenga la visualización",
-	"apihelp-linksuggest-param-query": "Mostrar sugerencias de enlaces",
 	"linksuggest-desc": "Sugiere enlaces a los editores en la vista Edición",
 	"tog-disablelinksuggest": "No mostrar sugerencias de vínculos"
 }

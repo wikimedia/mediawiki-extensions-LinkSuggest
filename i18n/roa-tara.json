@@ -4,11 +4,6 @@
 			"Joetaras"
 		]
 	},
-	"apihelp-linksuggest-example-1": "Cirche le pàggene jndr'à 'u namespace prengepàle ca accumenzane pe <kbd>Ashley</kbd>.",
-	"apihelp-linksuggest-example-2": "Ccreje 'na miniature de <kbd>[[:File:Whatever.jpg]]</kbd>.",
-	"apihelp-linksuggest-summary": "Suggerisce 'u collegamende a le editure sus 'a viste d'u cangiamende",
-	"apihelp-linksuggest-param-get": "Fà 'ndrucà",
-	"apihelp-linksuggest-param-query": "Fà 'ndrucà le suggereminde de le collegaminde",
 	"linksuggest-desc": "Suggerisce le collegaminde a le editure sus 'a viste d'u cangiamende",
 	"tog-disablelinksuggest": "No fà vedè 'u collegamende suggerite"
 }

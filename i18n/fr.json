@@ -10,11 +10,6 @@
 			"Wladek92"
 		]
 	},
-	"apihelp-linksuggest-example-1": "Rechercher les pages dans l’espace principal dont le nom commence par <kbd>Ashley</kbd>.",
-	"apihelp-linksuggest-example-2": "Créer une vignette de <kbd>[[:File:Whatever.jpg]]</kbd>.",
-	"apihelp-linksuggest-summary": "Suggérer un lien aux rédacteurs dans la vue de modification",
-	"apihelp-linksuggest-param-get": "Obtenir l’affichage",
-	"apihelp-linksuggest-param-query": "Afficher les suggestions de liens",
 	"linksuggest-desc": "Suggère des liens aux rédacteurs dans la vue de modification",
 	"tog-disablelinksuggest": "Ne pas montrer les liens suggérés"
 }

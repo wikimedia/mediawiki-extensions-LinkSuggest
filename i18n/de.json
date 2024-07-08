@@ -5,11 +5,6 @@
 			"Metalhead64"
 		]
 	},
-	"apihelp-linksuggest-example-1": "Sucht nach Seiten im Hauptnamensraum, die mit <kbd>Ashley</kbd> beginnen.",
-	"apihelp-linksuggest-example-2": "Erstellt ein Vorschaubild von <kbd>[[:File:Whatever.jpg]]</kbd>.",
-	"apihelp-linksuggest-summary": "Schlägt Autoren den Link bei der Bearbeitungsansicht vor",
-	"apihelp-linksuggest-param-get": "Ruft die Anzeige ab",
-	"apihelp-linksuggest-param-query": "Zeigt Linkvorschläge an",
 	"linksuggest-desc": "Ermöglicht im Bearbeitungsfenster Linkvorschläge für Bearbeiter",
 	"tog-disablelinksuggest": "Keine Linkvorschläge anzeigen"
 }

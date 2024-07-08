@@ -4,11 +4,6 @@
 			"Nokeoo"
 		]
 	},
-	"apihelp-linksuggest-example-1": "Ieškoti puslapių pagrindinė vardų srityje, prasidedančioje su <kbd>Ashley</kbd>.",
-	"apihelp-linksuggest-example-2": "Sukurti <kbd>[[:File:Whatever.jpg]]</kbd> miniatiūra.",
-	"apihelp-linksuggest-summary": "Siūlyti nuorodos redaktoriams redagavimo režime",
-	"apihelp-linksuggest-param-get": "Gauti rodinį",
-	"apihelp-linksuggest-param-query": "Rodyti nuorodų siūlymus",
 	"linksuggest-desc": "Siūlo nuorodas redaktoriams redagavimo režime",
 	"tog-disablelinksuggest": "Nerodyti nuorodų siūlymų"
 }

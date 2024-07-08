@@ -5,7 +5,6 @@
 			"WikiPhoenix"
 		]
 	},
-	"apihelp-linksuggest-example-2": "Skapa en miniatyr av <kbd>[[:File:Whatever.jpg]]</kbd>.",
 	"linksuggest-desc": "Föreslår länkar till redigerarna i redigeringsvyn",
 	"tog-disablelinksuggest": "Visa inte länkförslag"
 }

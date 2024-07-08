@@ -8,11 +8,6 @@
 			"Toliño"
 		]
 	},
-	"apihelp-linksuggest-example-1": "Procurar páxinas no espazo de nomes principal que comecen con <kbd>Ashley</kbd>.",
-	"apihelp-linksuggest-example-2": "Crear unha miniatura de <kbd>[[:File:Whatever.jpg]]</kbd>.",
-	"apihelp-linksuggest-summary": "Suxerir ligazóns ós editores na vista de edición",
-	"apihelp-linksuggest-param-get": "Obter a presentación",
-	"apihelp-linksuggest-param-query": "Amosar suxestións de ligazóns",
 	"linksuggest-desc": "Suxire ligazóns aos editores no modo de edición",
 	"tog-disablelinksuggest": "Non amosar as ligazón suxeridas"
 }

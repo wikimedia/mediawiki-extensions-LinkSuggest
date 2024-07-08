@@ -5,11 +5,6 @@
 			"ديفيد"
 		]
 	},
-	"apihelp-linksuggest-example-1": "ابحث عن الصفحات في النطاق الرئيسي التي تبدأ بـ<kbd>Ashley</kbd.",
-	"apihelp-linksuggest-example-2": "إنشاء صورة مصغرة لـ<kbd>[[:File:Whatever.jpg]]</kbd>.",
-	"apihelp-linksuggest-summary": "اقتراح رابط للمحررين في عرض التعديل",
-	"apihelp-linksuggest-param-get": "الحصول على العرض",
-	"apihelp-linksuggest-param-query": "عرض اقتراحات الروابط",
 	"linksuggest-desc": "يقترح وصلات للمحررين في عرض التعديل",
 	"tog-disablelinksuggest": "لا تظهر اقتراح وصلة"
 }

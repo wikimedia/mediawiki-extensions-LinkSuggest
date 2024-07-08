@@ -5,11 +5,6 @@
 			"Rotemliss"
 		]
 	},
-	"apihelp-linksuggest-example-1": "חיפוש דפים במרחב השמות הראשי המתחיל ב־<kbd>Ashley</kbd>.",
-	"apihelp-linksuggest-example-2": "יצירת תמונה ממוזערת של <kbd>[[:File:Whatever.jpg]]</kbd> .",
-	"apihelp-linksuggest-summary": "הצעות קישורים לעורכים בתצוגת עריכה",
-	"apihelp-linksuggest-param-get": "קבלת התצוגה",
-	"apihelp-linksuggest-param-query": "הצגת הצעות לקישורים",
 	"linksuggest-desc": "הצעות קישורים לעורכים תוך כדי עריכה",
 	"tog-disablelinksuggest": "ביטול הצגת הצעות לקישורים"
 }

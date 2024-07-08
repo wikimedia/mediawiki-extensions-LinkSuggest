@@ -5,11 +5,6 @@
 			"Macofe"
 		]
 	},
-	"apihelp-linksuggest-example-1": "Пребарај страници во главниот именски простор што почнуваат со <kbd>Ashley</kbd>.",
-	"apihelp-linksuggest-example-2": "Направи минијатура на <kbd>[[:File:Whatever.jpg]]</kbd>.",
-	"apihelp-linksuggest-summary": "Предлагање врски на уредниците при уредувачкиот преглед",
-	"apihelp-linksuggest-param-get": "Добивање на приказот",
-	"apihelp-linksuggest-param-query": "Приказ на предложени врски",
 	"linksuggest-desc": "Предлагање врски на уредниците при уредување",
 	"tog-disablelinksuggest": "Не прикажувај предложени врски"
 }

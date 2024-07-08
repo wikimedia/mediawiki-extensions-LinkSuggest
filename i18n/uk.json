@@ -8,11 +8,6 @@
 			"Ата"
 		]
 	},
-	"apihelp-linksuggest-example-1": "Пошук сторінок в основному просторі, що починаються на <kbd>Ashley</kbd>.",
-	"apihelp-linksuggest-example-2": "Створити мініатюру <kbd>[[:File:Whatever.jpg]]</kbd>.",
-	"apihelp-linksuggest-summary": "Пропонує редакторам посилання при перегляді редагування",
-	"apihelp-linksuggest-param-get": "Отримати відтворення",
-	"apihelp-linksuggest-param-query": "Показати пропозиції посилань",
 	"linksuggest-desc": "Підказки з посиланнями на вже існуючі сторінки у режимі редагування",
 	"tog-disablelinksuggest": "Не показувати пропозиції посилань"
 }
