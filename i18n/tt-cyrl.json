@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"Don Alessandro",
 			"Ильнар"
 		]
 	},
-	"tog-disablelinksuggest": "Сылтамаларны күрсәтмәскә"
+	"tog-disablelinksuggest": "Тәкъдим ителгән сылтамаларны күрсәтелмәсен"
 }
