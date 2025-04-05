@@ -58,7 +58,7 @@ class LinkSuggest implements
 	 * @param OutputPage $output
 	 */
 	public function onEditPage__showEditForm_initial( $editPage, $output ) {
-		if ( $this->userOptionsManager->getOption( $output->getUser(), 'disablelinksuggest' ) != true ) {
+		if ( !$this->userOptionsManager->getOption( $output->getUser(), 'disablelinksuggest' ) ) {
 			// Load CSS and JS by using ResourceLoader
 			$output->addModules( 'ext.LinkSuggest' );
 		}
