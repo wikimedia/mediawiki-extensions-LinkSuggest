@@ -18,6 +18,7 @@
  * @link https://www.mediawiki.org/wiki/Extension:LinkSuggest Documentation
  */
 
+use MediaWiki\EditPage\EditPage;
 use MediaWiki\Hook\EditPage__showEditForm_initialHook;
 use MediaWiki\Preferences\Hook\GetPreferencesHook;
 use MediaWiki\User\UserOptionsManager;
