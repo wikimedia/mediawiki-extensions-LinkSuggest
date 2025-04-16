@@ -15,7 +15,7 @@
 	"descriptionmsg": "linksuggest-desc",
 	"type": "other",
 	"requires": {
-		"MediaWiki": ">= 1.40"
+		"MediaWiki": ">= 1.42"
 	},
 	"MessagesDirs": {
 		"LinkSuggest": [
