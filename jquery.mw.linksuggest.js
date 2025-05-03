@@ -16,7 +16,7 @@
 	'use strict';
 
 	// Private static variables
-	var testerElement = null, // Tester element, global for caching and not recreate it everytime
+	let testerElement = null, // Tester element, global for caching and not recreate it everytime
 		cachedElement = null, // Cached element of the autocomplete to compare
 		cachedText = null, // Cached text before the position of the link
 		cachedPosition = null, // Cached position of the drop-down
@@ -29,7 +29,7 @@
 			delay: 300
 		},
 		_create: function () {
-			var self = this, ac,
+			let self = this, ac,
 				opt = {
 					source: function () {
 						self._sendQuery.apply( self, arguments );
@@ -75,7 +75,7 @@
 		},
 		// function copied from jQuery UI Autocomplete 1.9.2. Keep in sync with the same used in MediaWiki
 		_legacyKeydown: function ( event ) {
-			var keyCode;
+			let keyCode;
 			if ( this.element.prop( 'readOnly' ) ) {
 				suppressKeyPress = true;
 				suppressKeyPressRepeat = true;
@@ -136,7 +136,7 @@
 			}
 		},
 		_keydown: function ( event ) {
-			var keyCode = $.ui.keyCode;
+			const keyCode = $.ui.keyCode;
 			switch ( event.keyCode ) {
 				case keyCode.UP:
 				case keyCode.DOWN:
@@ -175,7 +175,7 @@
 			this._legacyKeydown.apply( this.element.data( 'autocomplete' ), arguments );
 		},
 		_sendQuery: function ( request, response ) {
-			var emptyset = [],
+			let emptyset = [],
 				text = this._getText(),
 				caret = this._getCaret(),
 				sQueryStartAt = -1,
@@ -292,7 +292,7 @@
 				}
 
 				// The rest of this function is quite similar to mw.widgets.TitleWidget.prototype.getOptionsFromData
-				var i, len, index, suggestionPage, redirect, redirects,
+				let i, len, index, suggestionPage, redirect, redirects,
 					titles = [],
 					redirectsTo = {},
 					pageIndexes = {};
@@ -317,17 +317,15 @@
 					}
 				}
 
-				titles.sort( function ( a, b ) {
-					return pageIndexes[ a ] - pageIndexes[ b ];
-				} );
+				titles.sort( ( a, b ) => pageIndexes[ a ] - pageIndexes[ b ] );
 
 				callback( thisArg._formatResponse( titles, format, stripPrefix ) );
 			};
 		},
 		_formatResponse: function ( data, format, stripPrefix ) {
-			return $.map( data, function ( n ) {
+			return $.map( data, ( n ) => {
 				if ( stripPrefix ) {
-					var pos = n.indexOf( ':' );
+					const pos = n.indexOf( ':' );
 					if ( pos !== -1 ) {
 						n = n.slice( pos + 1 );
 					}
@@ -338,7 +336,7 @@
 		_updateValue: function ( oItem ) {
 			this.element[ 0 ].focus();
 
-			var scrollTop = this.element[ 0 ].scrollTop,
+			const scrollTop = this.element[ 0 ].scrollTop,
 				text = this._getText(),
 				caret = this._getCaret(),
 				prefix = oItem.value.slice( 0, 2 );
@@ -349,7 +347,7 @@
 				}
 			}
 
-			var textBefore = text.slice( 0, Math.max( 0, i ) ),
+			const textBefore = text.slice( 0, Math.max( 0, i ) ),
 				newVal = textBefore + oItem.value + text.slice( caret );
 			this.element.val( newVal );
 
@@ -357,12 +355,12 @@
 			this.element[ 0 ].scrollTop = scrollTop;
 		},
 		_getCaret: function () {
-			var caretPos = 0,
+			let caretPos = 0,
 				control = this.element[ 0 ];
 			// IE Support
 			if ( document.selection && document.selection.createRange ) {
 				control.focus();
-				var sel = document.selection.createRange(),
+				const sel = document.selection.createRange(),
 					sel2 = sel.duplicate();
 				sel2.moveToElementText( control );
 				caretPos = -1;
@@ -385,12 +383,12 @@
 			return this.element[ 0 ].value;
 		},
 		_setCaret: function ( pos ) {
-			var control = this.element[ 0 ];
+			const control = this.element[ 0 ];
 			if ( control.setSelectionRange ) {
 				control.focus();
 				control.setSelectionRange( pos, pos );
 			} else if ( control.createTextRange ) {
-				var range = control.createTextRange();
+				const range = control.createTextRange();
 				range.collapse( true );
 				range.moveEnd( 'character', pos );
 				range.moveStart( 'character', pos );
@@ -398,7 +396,7 @@
 			}
 		},
 		_getCaretPosition: function () {
-			var result = [ 0, 0 ],
+			let result = [ 0, 0 ],
 				control = this.element[ 0 ],
 				text = this._getText(),
 				caret = this._getCaret(),
@@ -460,7 +458,7 @@
 			return result;
 		},
 		_open: function () {
-			var menu = this.element.data( 'autocomplete' ).menu.element,
+			const menu = this.element.data( 'autocomplete' ).menu.element,
 				offset = this._getCaretPosition(),
 				width = menu.outerWidth(),
 				props = {
@@ -481,6 +479,6 @@
 }( jQuery ) );
 
 // Implementation: This should be done injecting this code into MediaWiki, not in this JS file
-$( function () {
+$( () => {
 	$( '#wpTextbox1' ).linksuggest();
 } );
