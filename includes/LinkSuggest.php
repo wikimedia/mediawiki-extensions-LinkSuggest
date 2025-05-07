@@ -20,8 +20,10 @@
 
 use MediaWiki\EditPage\EditPage;
 use MediaWiki\Hook\EditPage__showEditForm_initialHook;
+use MediaWiki\Output\OutputPage;
 use MediaWiki\Preferences\Hook\GetPreferencesHook;
-use MediaWiki\User\UserOptionsManager;
+use MediaWiki\User\Options\UserOptionsManager;
+use MediaWiki\User\User;
 
 // phpcs:disable Squiz.Classes.ValidClassName.NotCamelCaps
 class LinkSuggest implements
