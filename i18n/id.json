@@ -2,9 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"Bennylin",
-			"IvanLanin"
+			"IvanLanin",
+			"Penyuwangi"
 		]
 	},
-	"linksuggest-desc": "Menyarankan pranala kepada editor pada tampilan suntingan",
+	"linksuggest-desc": "Menyarankan pranala kepada penyunting pada tampilan suntingan",
 	"tog-disablelinksuggest": "Jangan menampilkan saran pranala"
 }
