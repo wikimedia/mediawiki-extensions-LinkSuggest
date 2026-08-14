@@ -30,12 +30,9 @@ class LinkSuggest implements
 	EditPage__showEditForm_initialHook,
 	GetPreferencesHook
 {
-	private UserOptionsManager $userOptionsManager;
-
 	public function __construct(
-		UserOptionsManager $userOptionsManager
+		private readonly UserOptionsManager $userOptionsManager,
 	) {
-		$this->userOptionsManager = $userOptionsManager;
 	}
 
 	/**
