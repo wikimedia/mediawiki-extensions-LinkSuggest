@@ -42,9 +42,6 @@
 			0
 		]
 	},
-	"ConfigRegistry": {
-		"linksuggest": "MediaWiki\\Config\\GlobalVarConfig::newInstance"
-	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
 		"remoteExtPath": "LinkSuggest"
